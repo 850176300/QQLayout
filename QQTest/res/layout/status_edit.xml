@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_texture" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.widget.MaxHeightRelativelayout android:id="@id/status_input_layout" android:background="@drawable/common_strip_setting_bg" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:minHeight="150.0dip" android:layout_weight="1.0">
+        <com.tencent.mobileqq.richstatus.RichStatusEditText android:textSize="16.0dip" android:textColor="@color/skin_input" android:gravity="top" android:id="@id/input_edit" android:background="@null" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:paddingBottom="29.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxHeight="200.0dip" android:minHeight="150.0dip" android:singleLine="false" android:lineSpacingExtra="2.0dip" android:inputType="textMultiLine">
+            <requestFocus />
+        </com.tencent.mobileqq.richstatus.RichStatusEditText>
+        <TextView android:textSize="16.0dip" android:textColor="@color/skin_gray3" android:id="@id/count_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:layout_alignRight="@id/input_edit" android:layout_alignBottom="@id/input_edit" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/location_ll" android:background="@drawable/rich_status_action_span_pressed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginBottom="4.0dip" android:layout_alignLeft="@id/input_edit" android:layout_alignBottom="@id/input_edit">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/image_span_iv" android:duplicateParentState="true" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/rich_status_black" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/image_span_tv" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:maxWidth="200.0dip" android:singleLine="true" style="@style/C4_Font_white" />
+        </LinearLayout>
+    </com.tencent.widget.MaxHeightRelativelayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/event_rl" android:background="@drawable/common_btn_white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="8.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="28.0dip" android:src="@drawable/rich_status_default_action_medium" />
+        <TextView android:background="@null" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="做什么" style="@style/ButtonWhiteTxt" />
+    </LinearLayout>
+</LinearLayout>

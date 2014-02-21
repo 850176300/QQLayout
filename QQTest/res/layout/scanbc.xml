@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <SurfaceView android:id="@id/preview_view" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.google.zxing.client.android.ViewfinderView android:id="@id/viewfinderview" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/relativeLayoutResult" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="80.0dip" android:text="扫描二维码" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

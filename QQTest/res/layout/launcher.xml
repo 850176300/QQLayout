@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mobileqq.widget.QqViewFlipper android:id="@id/workspace_flipper" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <LinearLayout android:id="@id/workspace_tab" android:background="#ff34373c" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/workspace_flipper" />
+</RelativeLayout>

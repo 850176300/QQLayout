@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/boss_unipay_wrapper"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/boss_unipay_linear.tipframe">
+        <LinearLayout style="@style/boss_unipay_linear">
+            <LinearLayout android:paddingTop="28.0dip" android:paddingBottom="28.0dip" style="@style/boss_unipay_alert_title">
+                <TextView android:gravity="center" android:text="您的Q币余额不足，请充值Q余额不足，请充值Q余额不足，请充值Q余额不足，请充值Q余额不足，请充值Q币" android:singleLine="false" style="@style/boss_unipay_tx" />
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/boss_unipay_line" />
+        <LinearLayout style="@style/boss_unipay_bar">
+            <Button android:text="取消" android:layout_weight="1.0" style="@style/boss_unipay_btn.noborder" />
+            <View style="@style/boss_unipay_partline" />
+            <Button android:text="充值" android:layout_weight="1.0" style="@style/boss_unipay_btn.noborder" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

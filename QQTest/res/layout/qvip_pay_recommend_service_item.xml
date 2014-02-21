@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/qvip_pay_recommend_service_icon" android:background="@drawable/qvip_pay_recommend_service_default_icon" android:duplicateParentState="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/contact_list_entry_item_selector" android:scaleType="fitCenter" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/qvip_pay_recommend_service_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" />
+</LinearLayout>

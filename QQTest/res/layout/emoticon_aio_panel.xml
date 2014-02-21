@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mobileqq.emoticonview.EmoticonMainPanel android:id="@id/emoview" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/tabs_fake" android:background="@drawable/aio_face_tab_bg" android:layout_width="fill_parent" android:layout_height="@dimen/emoticon_tab_common_height" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/emotion_panel" android:background="@drawable/aio_face_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tabs_fake">
+        <com.tencent.mobileqq.emoticonview.EmoticonViewPager android:id="@id/viewPager" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/radioButton" />
+        <com.tencent.mobileqq.emoticonview.EmoticonPagerRadioGroup android:orientation="horizontal" android:id="@id/radioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ViewStub android:id="@id/vs_download" android:visibility="invisible" android:layout="@layout/download" android:inflatedId="@id/download_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/vs_favorit_default" android:visibility="invisible" android:layout="@layout/favorit_default" android:inflatedId="@id/favorit_default_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/container_tab" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.tencent.mobileqq.emoticonview.EmoticonTabs android:orientation="horizontal" android:id="@id/tabs" android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="@dimen/emoticon_tab_common_height" android:layout_weight="4.0" android:overScrollMode="never" />
+        <Button android:textSize="17.0sp" android:textColor="@color/white" android:id="@id/btn_send" android:background="@drawable/qvip_emoji_aio_send_button" android:layout_width="0.0dip" android:layout_height="@dimen/emoticon_tab_common_height" android:text="@string/aio_emoticon_panel_send" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/container_secondary_tab" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/btn_more_emoticon" android:background="@drawable/qvip_emoji_tab_mall_more_button" android:layout_width="@dimen/emoticon_tab_button_width" android:layout_height="@dimen/emoticon_tab_common_height" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <Button android:id="@id/btn_back" android:background="@drawable/qvip_emoji_tab_back_button" android:layout_width="@dimen/emoticon_tab_button_width" android:layout_height="@dimen/emoticon_tab_common_height" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <com.tencent.mobileqq.emoticonview.EmoticonTabs android:orientation="horizontal" android:id="@id/tab_sencondary_emoticon" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="@dimen/emoticon_tab_common_height" android:layout_toLeftOf="@id/btn_more_emoticon" android:layout_toRightOf="@id/btn_back" android:layout_alignParentBottom="true" android:overScrollMode="never" />
+        <ImageView android:id="@id/new_view" android:background="@drawable/qvip_emoji_more_emoticon_red" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="7.0dip" android:layout_alignTop="@id/btn_more_emoticon" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</com.tencent.mobileqq.emoticonview.EmoticonMainPanel>

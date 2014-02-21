@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/qav_video_notify_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/sharp_notification_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip">
+        <ImageView android:id="@id/qav_notification_head" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/qav_video_notify_default" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/qav_black" android:ellipsize="end" android:id="@id/qav_notification_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxWidth="166.0dip" android:singleLine="true" android:layout_toRightOf="@id/qav_notification_head" android:layout_alignTop="@id/qav_notification_head" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/qav_black" android:id="@id/qav_notification_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/qav_notification_name" android:layout_alignBottom="@id/qav_notification_head" />
+        <ImageView android:id="@id/qav_notification_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignBottom="@id/qav_notification_head" android:layout_alignParentRight="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/qav_black" android:id="@id/qav_notification_clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/qav_notification_head" android:layout_alignRight="@id/qav_notification_icon" />
+    </RelativeLayout>
+</RelativeLayout>

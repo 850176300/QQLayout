@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="contat_buddy_list_name_width">194.0dip</dimen>
+    <dimen name="group_file_list_item_height">168.0dip</dimen>
+    <dimen name="group_file_list_item_del_button_width">152.0dip</dimen>
+    <dimen name="qq_troopinfo_item_photo_space">2.0dip</dimen>
+    <dimen name="qq_troopinfo_item_photo_titleMinWidth">74.0dip</dimen>
+    <dimen name="cover_padding_top">-60.0dip</dimen>
+    <dimen name="virtual_qchong_bar_height">35.19998dip</dimen>
+    <dimen name="virtual_qchong_padding_top">35.0dip</dimen>
+    <dimen name="virtual_qchong_divider_height">0.39999998dip</dimen>
+    <dimen name="virtual_qchong_ad_height">44.0dip</dimen>
+    <dimen name="virtual_qchong_ad_top_height">42.399994dip</dimen>
+    <dimen name="virtual_qchong_his_divider_height">0.39999998dip</dimen>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/container_emoticon_info" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="43.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/text_emoticon_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:textSize="15.0sp" android:textColor="@color/qvip_emoji_aio_recommend_button_text" android:id="@id/btn_emoticon_detail" android:background="@drawable/qvip_emoji_recommend_detail_button" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/aio_emoticon_detail_text" />
+    </LinearLayout>
+    <com.tencent.image.URLImageView android:id="@id/img_emoticon_recommend" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:scaleType="centerInside" android:layout_toLeftOf="@id/container_emoticon_info" />
+</RelativeLayout>

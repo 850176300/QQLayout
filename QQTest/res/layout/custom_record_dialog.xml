@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/recording_movement_ll" android:background="@drawable/custom_record_bg" android:layout_width="170.0dip" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/record_prompt_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip">
+            <ImageView android:id="@id/voice_preasure_iv" android:background="@drawable/voice_recording_bg" android:visibility="invisible" android:layout_width="55.0dip" android:layout_height="77.0dip" android:src="@drawable/voice_preasure_clip" android:layout_centerInParent="true" />
+            <ProgressBar android:id="@id/voice_init_pb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/voice_recording_tips_tv" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="设备启动中" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/recording_prompt_ll" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/prompt_listen_rl" android:background="@drawable/custom_record_left_bg_normal" android:layout_width="160.0dip" android:layout_height="170.0dip">
+            <ImageView android:id="@id/prompt_listen_iv" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginTop="25.0dip" android:src="@drawable/qq_aio_record_play_01" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/prompt_listen_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/prompt_listen_iv" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <View android:background="#ff262626" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/prompt_cancel_rl" android:background="@drawable/custom_record_right_bg_normal" android:layout_width="160.0dip" android:layout_height="170.0dip">
+            <ImageView android:id="@id/prompt_cancel_iv" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginTop="25.0dip" android:src="@drawable/qq_aio_record_del_01" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/prompt_cancel_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/prompt_cancel_iv" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

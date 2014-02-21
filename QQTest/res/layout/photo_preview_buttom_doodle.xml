@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/photo_preview_doodle_bg" android:background="@drawable/toolbar_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tencent="http://schemas.android.com/apk/res/com.tencent.mobileqq">
+    <Button android:textSize="@dimen/font_size_extra_small" android:textColor="@color/preview_btn_text_color" android:layout_gravity="center" android:id="@id/doodle_btn" android:background="@drawable/preview_btn_bg_color" android:padding="4.0dip" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/photo_preveiw_doodle" android:drawableTop="@drawable/preview_toolbar_doodle_selector" android:drawablePadding="-2.0dip" android:layout_weight="1.0" tencent:skintype="bottom_compound" />
+</RelativeLayout>

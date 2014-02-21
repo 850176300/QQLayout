@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/qzone_cover_image_layout" android:layout_width="106.0dip" android:layout_height="106.0dip">
+        <com.qzone.widget.RoundCornerImageView android:id="@id/qzone_cover_item_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/qzone_cover_vip" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/qzone_cover_item_vip" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/qzone_cover_image_icon" android:layout_width="12.0dip" android:layout_height="10.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/qzone_cover_item_imageicon" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/qzone_color_bai" android:gravity="bottom" android:id="@id/qzone_cover_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginBottom="3.0dip" android:text="7" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/qzone_cover_selected" android:visibility="invisible" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/qzone_cover_selected" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/qzone_cover_more" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/qzone_cover_more" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/qzone_cover_item_name" android:id="@id/qzone_cover_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="背景" android:layout_below="@id/qzone_cover_image_layout" android:layout_centerHorizontal="true" />
+</RelativeLayout>

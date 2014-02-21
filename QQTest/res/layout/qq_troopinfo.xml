@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.widget.XListView android:id="@id/common_xlistview" android:background="@drawable/bg_texture" android:paddingLeft="@dimen/layout_common_xlistview_paddingLR" android:paddingRight="@dimen/layout_common_xlistview_paddingLR" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" />
+    <Button android:id="@id/btn" android:layout_width="fill_parent" android:layout_height="@dimen/float_btn_height" android:text="@string/info_card_chatadd_chat" android:layout_alignParentBottom="true" style="@style/FloatBtn" />
+</RelativeLayout>

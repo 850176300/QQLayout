@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/un_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:layout_centerVertical="true" />
+    <TextView android:id="@id/un_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="2.0dip" android:text="ID__UN_NAME" android:singleLine="true" android:layout_toRightOf="@id/un_icon" style="@style/NotificationTitle" />
+    <TextView android:id="@id/un_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:text="UN_TIME" android:singleLine="true" android:layout_alignTop="@id/un_name" android:layout_alignParentRight="true" style="@style/NotificationText" />
+    <TextView android:id="@id/un_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ID__UN_DETAIL" android:layout_toRightOf="@id/un_icon" android:layout_below="@id/un_name" style="@style/NotificationText" />
+    <ProgressBar android:id="@id/un_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:maxHeight="4.0dip" android:max="100" android:progress="99" android:progressDrawable="@drawable/aio_file_progress_layerlist" android:minHeight="4.0dip" android:layout_toRightOf="@id/un_icon" android:layout_below="@id/un_name" style="?android:attr/progressBarStyleHorizontal" />
+    <TextView android:id="@id/un_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="ID__UN_PERCENT" android:singleLine="true" android:layout_below="@id/un_progress" android:layout_alignParentRight="true" style="@style/NotificationText" />
+</RelativeLayout>

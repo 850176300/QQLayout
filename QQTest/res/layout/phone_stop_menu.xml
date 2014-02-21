@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/textSizeS3" android:textColor="@color/skin_gray2" android:gravity="center" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/phone_stop_prompt" />
+    <Button android:id="@id/phone_setting_stop_confirm_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/phone_confirm" style="@style/action_sheet_red_btn_style" />
+    <Button android:id="@id/phone_setting_stop_cancel_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/phone_cancel" style="@style/action_sheet_cancel_btn_style" />
+</LinearLayout>

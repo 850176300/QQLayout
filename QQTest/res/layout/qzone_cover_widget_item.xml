@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/qzone_widget_image" android:layout_width="62.0dip" android:layout_height="62.0dip">
+        <ImageView android:id="@id/qzone_widget_thumb" android:background="@drawable/qzone_cover_widget_weather_selector" android:layout_width="62.0dip" android:layout_height="62.0dip" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/qzone_widget_selected" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/qzone_cover_selected" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/qzone_widget_mask" android:background="@drawable/qzone_cover_item_mask" android:layout_width="62.0dip" android:layout_height="62.0dip" android:scaleType="centerCrop" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/qzone_cover_item_name" android:id="@id/qzone_widget_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="星座" android:layout_below="@id/qzone_widget_image" android:layout_centerHorizontal="true" />
+</RelativeLayout>

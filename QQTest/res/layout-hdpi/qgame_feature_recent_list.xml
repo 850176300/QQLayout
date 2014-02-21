@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/frameLayout" android:background="@color/gc_list_bg_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00ffffff" android:cacheColorHint="@android:color/transparent" android:divider="@null" />
+    <WebView android:id="@id/webview" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

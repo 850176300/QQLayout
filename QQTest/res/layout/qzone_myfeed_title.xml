@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:id="@id/feed_title_area" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.qzone.widget.textwidget.CellTextView android:textSize="@dimen/feed_item_username_text_size" android:textColor="@color/qzone_feed_username" android:ellipsize="end" android:gravity="top" android:id="@id/feed_title_nickname" android:layout_width="174.0dip" android:layout_height="wrap_content" android:text="飛翔的小球球" android:singleLine="true" />
+            <TextView android:textSize="@dimen/feed_item_content_text_size" android:textColor="@color/text_comment" android:ellipsize="end" android:gravity="top|left|center" android:id="@id/feed_title_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="在回复中提到我" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/dp13" android:textColor="@color/feed_item_time_text" android:ellipsize="none" android:gravity="left" android:id="@id/feed_title_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/feed_item_comment_text_size" android:textColor="@color/qzone_feed_combtn" android:ellipsize="none" android:gravity="center" android:id="@id/feed_title_reply" android:paddingLeft="14.0dip" android:paddingTop="2.0dip" android:paddingBottom="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="30.0dip" android:text="回复" android:singleLine="true" android:drawableLeft="@drawable/qzone_img_icon_comment" android:drawablePadding="6.0dip" />
+</LinearLayout>

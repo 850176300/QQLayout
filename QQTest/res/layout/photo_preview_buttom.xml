@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/delete_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="14.0dip" android:src="@drawable/photopreview_selected_item_delete_selector" android:layout_above="@id/photopreview_buttom" android:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/photopreview_buttom" android:background="@drawable/skin_aio_input_bar_bg" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <HorizontalScrollView android:id="@id/scrollView" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/send_photo" android:layout_alignParentLeft="true">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <GridView android:layout_gravity="center" android:id="@id/selected_photos" android:scrollbars="none" android:fadingEdge="none" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:listSelector="@color/transparent" android:cacheColorHint="@null" android:horizontalSpacing="10.0dip" android:verticalSpacing="0.0dip" android:stretchMode="none" android:columnWidth="42.0dip" android:numColumns="6" />
+                <ImageView android:id="@id/new_photo" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/photopreview_selected_item_add_selector" />
+            </LinearLayout>
+        </HorizontalScrollView>
+        <Button android:id="@id/send_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/photo_preveiw_send" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SmallButtonBlue" />
+    </RelativeLayout>
+</RelativeLayout>

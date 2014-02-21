@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tenpay.tenpayplugin.view.TenpayResizeLinearLayout android:orientation="vertical" android:id="@id/tenpay_main_linear" android:background="#66000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ScrollView android:id="@id/main_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/qb_tenpay_dialog_pay_result" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:visibility="visible" layout="@layout/boss_unipay_tenpay_tips_head" />
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <include android:id="@id/pay_cft" android:visibility="gone" layout="@layout/boss_unipay_tenpay_tips_propnum_cft" />
+                        <include android:id="@id/pay_kuai" android:visibility="gone" layout="@layout/boss_unipay_tenpay_tips_cont" />
+                        <include android:id="@id/pay_yz" android:visibility="gone" layout="@layout/boss_unipay_tenpay_tips_propnum_yz" />
+                        <include android:id="@id/tenpay_bank_phone" android:visibility="gone" layout="@layout/boss_unipay_tenpay_bigview_bank_phone" />
+                        <include android:id="@id/tenpay_youxiaoqi" android:visibility="gone" layout="@layout/boss_unipay_tenpay_bigview_youxiaoqi" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <com.tenpay.tenpayplugin.view.MyKeyboardWindow android:id="@id/bin_keyboard" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.tenpay.tenpayplugin.view.TenpayResizeLinearLayout>

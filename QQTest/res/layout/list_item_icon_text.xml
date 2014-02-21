@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/common_list_item_background" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <TextView android:textSize="@dimen/textSize15sp" android:textColor="@color/skin_black" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:id="@id/rightArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/qzone_albumlist_icon_forward" />
+</LinearLayout>

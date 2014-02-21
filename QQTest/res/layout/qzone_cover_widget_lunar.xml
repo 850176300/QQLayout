@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/qzone_widget" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@drawable/qzone_cover_lunar_calendar" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="6.0dip">
+            <TextView android:textSize="8.0sp" android:textStyle="bold" android:textColor="@color/qzone_color_bai" android:gravity="bottom|center" android:id="@id/month" android:layout_width="fill_parent" android:layout_height="18.0dip" android:text="农历五月" style="@style/QzoneWidgetText" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="27.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/date_first" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginLeft="9.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/qzone_cover_lunar_first" android:scaleType="fitXY" />
+                <ImageView android:layout_gravity="center" android:id="@id/date_second" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/qzone_cover_lunar_one" android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+                <ImageView android:layout_gravity="center" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/qzone_cover_lunar_suitable" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/qzone_color_bai" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/fit_first" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="80.0dip" android:text="修造" android:maxLines="1" style="@style/QzoneWidgetText" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/qzone_cover_lunar_avoid" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/qzone_color_bai" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/notfit_first" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="80.0dip" android:text="嫁娶" android:maxLines="1" style="@style/QzoneWidgetText" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/widget_loading" android:visibility="invisible" android:layout_width="54.0dip" android:layout_height="16.5dip" android:layout_marginRight="10.0dip" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

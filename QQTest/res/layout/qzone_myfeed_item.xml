@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qzone.widget.LinerLayoutForListViewItem android:orientation="vertical" android:background="@drawable/qzone_list_item_bg_selector" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:qzone="http://schemas.android.com/apk/res/com.tencent.mobileqq">
+    <LinearLayout android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.qzone.widget.AvatarImageView android:id="@id/myfeed_title_user_icon" android:layout_width="@dimen/qzone_feed_detail_avatar_width" android:layout_height="@dimen/qzone_feed_detail_avatar_width" android:layout_marginLeft="7.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/qzone_icon_default_avatar" qzone:avatarSize="@dimen/qzone_feed_detail_avatar_width" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ViewStub android:id="@id/myfeed_title_area_stub" android:layout="@layout/qzone_myfeed_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/feed_item_margin_right" android:layout_marginBottom="4.0dip" />
+            <ViewStub android:id="@id/myfeed_content_area_stub" android:layout="@layout/qzone_myfeed_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/feed_item_margin_right" android:layout_marginBottom="3.0dip" />
+            <ViewStub android:id="@id/myfeed_gift_photo_stub" android:layout="@layout/qzone_myfeed_gift_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="@dimen/feed_item_margin_right" android:layout_marginBottom="13.0dip" />
+            <ViewStub android:id="@id/myfeed_source_content_area_stub" android:layout="@layout/qzone_myfeed_source_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/feed_item_margin_right" android:layout_marginBottom="13.0dip" />
+            <ViewStub android:id="@id/myfeed_leftthumb_area_stub" android:layout="@layout/qzone_myfeed_leftthumb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/feed_item_margin_right" android:layout_marginBottom="13.0dip" />
+            <ViewStub android:id="@id/myfeed_comment_area_stub" android:layout="@layout/qzone_myfeed_comment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip" android:layout_marginRight="@dimen/feed_item_margin_right" android:layout_marginBottom="12.0dip" />
+            <ViewStub android:id="@id/myfeed_operation_area_stub" android:layout="@layout/qzone_myfeed_operation" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/color_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</com.qzone.widget.LinerLayoutForListViewItem>

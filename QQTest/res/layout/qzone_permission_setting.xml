@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mobileqq.widget.BounceScrollView android:background="@drawable/bg_texture" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foregroundGravity="fill_horizontal|top|center">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/permission_access" android:background="@drawable/common_strip_setting_top" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/permission_access_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/qzone_permission_access" android:singleLine="true" android:layout_centerVertical="true" style="@style/B4_Font_white" />
+                <ImageView android:id="@id/imageView1" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/common_arrow_right_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+                <TextView android:id="@id/permission_access_desc" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/imageView1" android:layout_alignBottom="@id/permission_access_text" style="@style/C8_Font_white" />
+            </RelativeLayout>
+            <TextView android:gravity="center_vertical" android:id="@id/permission_exclude" android:background="@drawable/common_strip_setting_middle" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/qzone_permission_exclude" android:drawableRight="@drawable/common_arrow_right_selector" style="@style/B4_Font_white" />
+            <TextView android:gravity="center_vertical" android:id="@id/permission_block" android:background="@drawable/common_strip_setting_bottom" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/qzone_permission_block" android:drawableRight="@drawable/common_arrow_right_selector" style="@style/B4_Font_white" />
+        </LinearLayout>
+    </com.tencent.mobileqq.widget.BounceScrollView>
+</LinearLayout>

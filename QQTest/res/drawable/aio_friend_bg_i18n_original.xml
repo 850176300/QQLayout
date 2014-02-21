@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/qtrans_feature_aio_friend_bg_pressed_i18n_original" />
+    <item android:drawable="@drawable/qtrans_feature_aio_friend_bg_nor_i18n_original" />
+</selector>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" style="@style/CardInfoItemTitle" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/info_card_moreinfo_item_paddingTB" android:layout_marginBottom="@dimen/info_card_moreinfo_item_paddingTB" android:layout_weight="1.0">
+        <com.tencent.mobileqq.widget.StatableSpanTextView android:textSize="@dimen/info_card_middle_item_txtsize" android:textColor="@color/skin_black_item" android:id="@id/info" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.tencent.mobileqq.widget.StatableSpanTextView android:textSize="12.0sp" android:textColor="@color/skin_black_item" android:id="@id/location" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/arrow" style="@style/CardInfoItemArrow" />
+</LinearLayout>

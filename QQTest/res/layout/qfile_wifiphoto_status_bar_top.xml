@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/pconline_status_bar" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/wifiphoto_status_bar_content" android:background="@drawable/qfile_wifiphoto_statusbar_bg" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:id="@id/imageView1" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/qfile_wifiphoto_statusbar_icon" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="left|center" android:id="@id/wifiphoto_status_bar_text" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wp_connected_status_bar" android:layout_weight="1.0" />
+        <ImageView android:gravity="center" android:clickable="true" android:layout_width="9.0dip" android:layout_height="14.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/qfile_wifiphoto_enter" />
+    </LinearLayout>
+</LinearLayout>

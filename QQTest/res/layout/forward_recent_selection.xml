@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@drawable/bg_texture" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/rl_title_bar" layout="@layout/custom_commen_title" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/skin_black_group_item" android:gravity="center_vertical" android:id="@id/selectMore" android:background="@drawable/common_list_group_item_background" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/all_contacts" android:drawableRight="@drawable/common_arrow_right_selector" />
+    <com.tencent.widget.XListView android:id="@id/listView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:divider="@null" />
+</LinearLayout>

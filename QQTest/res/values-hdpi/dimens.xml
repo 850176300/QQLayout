@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="contat_buddy_list_name_width">194.0dip</dimen>
+    <dimen name="group_file_list_item_height">112.0dip</dimen>
+    <dimen name="group_file_list_item_del_button_width">102.0dip</dimen>
+    <dimen name="qq_troopinfo_item_photo_space">2.0dip</dimen>
+    <dimen name="qq_troopinfo_item_photo_titleMinWidth">74.0dip</dimen>
+    <dimen name="tab_min_w">50.0dip</dimen>
+    <dimen name="tab_min_h">30.0dip</dimen>
+    <dimen name="tab_left_padding_right">7.0dip</dimen>
+    <dimen name="tab_right_padding_left">7.0dip</dimen>
+    <dimen name="cover_padding_top">-90.0dip</dimen>
+    <dimen name="shuoshuo_recent_photo_grid_item_w">65.0dip</dimen>
+    <dimen name="virtual_qchong_bar_height">44.0dip</dimen>
+    <dimen name="virtual_qchong_padding_top">35.0dip</dimen>
+    <dimen name="virtual_qchong_divider_height">0.5dip</dimen>
+    <dimen name="virtual_qchong_ad_height">55.0dip</dimen>
+    <dimen name="virtual_qchong_ad_top_height">53.0dip</dimen>
+    <dimen name="virtual_qchong_his_divider_height">0.5dip</dimen>
+    <dimen name="qzone_top_bar_title_max_width">102.0dip</dimen>
+    <dimen name="qzone_top_bar_button_max_width">90.0dip</dimen>
+</resources>

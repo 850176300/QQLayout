@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qzone.widget.LinerLayoutForListViewItem android:orientation="horizontal" android:id="@id/feedDetailContentCommon" android:background="@color/color_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:qzone="http://schemas.android.com/apk/res/com.tencent.mobileqq">
+    <com.qzone.widget.AvatarImageView android:id="@id/authorInfoImgUserIcon" android:focusableInTouchMode="false" android:duplicateParentState="false" android:layout_width="@dimen/qzone_feed_detail_avatar_width" android:layout_height="@dimen/qzone_feed_detail_avatar_width" android:layout_marginLeft="@dimen/dp7" android:layout_marginTop="@dimen/dp7" android:layout_marginRight="@dimen/dp7" android:src="@drawable/qzone_icon_default_avatar" android:contentDescription="头像" qzone:avatarSize="@dimen/qzone_feed_detail_avatar_width" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="@dimen/dp7" android:layout_weight="1.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.qzone.widget.textwidget.CellTextView android:textSize="@dimen/feed_item_content_text_size" android:textColor="@color/feed_operation_text_color" android:ellipsize="end" android:id="@id/authorInfoNickName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sasad" android:singleLine="true" android:lineSpacingExtra="0.0dip" android:marqueeRepeatLimit="1" />
+                <ImageView android:layout_gravity="left|center" android:id="@id/authorInfovip" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/feed_item_comment_text_size" android:textColor="@color/color_content_second" android:ellipsize="none" android:id="@id/authorInfoPublishDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="16:23" android:singleLine="true" />
+        </LinearLayout>
+        <com.qzone.widget.textwidget.CellTextView android:textSize="@dimen/feed_item_content_text_size" android:textColor="@color/feed_item_content_text_color" android:id="@id/feedTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/feedContentContainer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.qzone.widget.textwidget.CellTextView android:textSize="@dimen/feed_item_content_text_size" android:textColor="@color/feed_item_content_text_color" android:id="@id/feedContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/feedForwardContainer" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.qzone.widget.textwidget.CellTextView android:textSize="@dimen/feed_item_content_text_size" android:textColor="@color/feed_item_content_text_color" android:id="@id/feedForwardAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:lineSpacingExtra="7.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/feedForwardContentContainer" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.qzone.widget.textwidget.CellTextView android:textSize="@dimen/feed_item_content_text_size" android:textColor="@color/feed_item_content_text_color" android:id="@id/feedForwardContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_marginBottom="6.0dip" android:lineSpacingExtra="7.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/feedMediaContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:gravity="bottom|left|center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="bottom|left|center" android:orientation="vertical" android:id="@id/contentImageContainer" android:paddingTop="@dimen/dp10" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="7.0dip">
+                    <include android:layout_gravity="left" android:id="@id/contentSingleImage" android:background="@color/color_background" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/qzone_item_feed_detail_galleryitem" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="bottom" android:id="@id/audioFeedBubbleContainer" android:paddingTop="@dimen/dp5" android:paddingBottom="@dimen/dp5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:layout_gravity="bottom" android:id="@id/forwardAudioFeedBubbleContainer" android:paddingTop="@dimen/dp5" android:paddingBottom="@dimen/dp5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+        <com.qzone.widget.textwidget.CellTextView android:textSize="14.0sp" android:textColor="@color/qzone_feed_operation_lbs" android:id="@id/feedPhotoDescrption" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp7" android:text="我确认过了，没有电话，没有短信，没有留言，什么都没有。。。哪里有人表白，呵呵我确认过了，没有电话，没有短信，没有留言，什么都没有。。。哪里有人表白，呵呵我确认过了，没有电话，没有短信，没有留言，什么都没有。。。哪里有人表白，呵呵" android:lineSpacingExtra="0.0dip" />
+    </LinearLayout>
+</com.qzone.widget.LinerLayoutForListViewItem>

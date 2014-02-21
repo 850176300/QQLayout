@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ll_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.widget.PinnedHeaderExpandableListView android:id="@id/elv_buddies" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:cacheColorHint="#00000000" android:indicatorLeft="12.0dip" android:indicatorRight="24.0dip" android:divider="@null" />
+    <ImageView android:gravity="center" android:id="@id/iv_online_friend_tip" android:background="@drawable/contact_online_freind_tip_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="40.0dip" android:src="@drawable/online_friend_tips_bar" android:scaleType="center" android:layout_alignParentBottom="true" android:contentDescription="@null" />
+</RelativeLayout>

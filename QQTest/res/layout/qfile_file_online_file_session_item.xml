@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="10.0dip" android:paddingTop="1.0dip" android:paddingRight="10.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/online_file_prompt" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="10.0dip" android:text="@string/onlinefileopprompt" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/online_file_space_1" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_below="@id/online_file_prompt" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/online_file_space_1" android:layout_alignParentLeft="true">
+        <RelativeLayout android:id="@id/online_file_request_layout" android:background="@drawable/bound_thick" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/online_file_layout" layout="@layout/qfile_file_online_file_item" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

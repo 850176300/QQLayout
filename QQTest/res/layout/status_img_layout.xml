@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/skin_gray2" android:id="@id/rich_caption_txt" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="@string/info_card_option_sig" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rich_layout" android:background="@drawable/common_strip_setting_top" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/rich_action_image" android:duplicateParentState="true" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/rich_status_default_action_big" />
+        <LinearLayout android:orientation="vertical" android:paddingRight="10.0dip" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.tencent.mobileqq.widget.StatableSpanTextView android:textSize="16.0sp" android:textColor="@color/skin_black_item" android:id="@id/rich_action_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.tencent.mobileqq.widget.StatableSpanTextView android:textSize="12.0sp" android:textColor="@color/skin_gray2_item" android:id="@id/rich_location_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/rich_right_image" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_arrow_right_selector" />
+        <ProgressBar android:id="@id/rich_loading_pb" android:duplicateParentState="true" android:layout_width="16.0dip" android:layout_height="16.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/common_loading3" android:indeterminateBehavior="repeat" />
+    </LinearLayout>
+</LinearLayout>

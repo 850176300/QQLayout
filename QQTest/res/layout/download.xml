@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/cover" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/xufei_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/cover">
+            <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/tips" android:layout_width="fill_parent" android:layout_height="24.0dip" android:text="表情包已过期，请续费后使用。" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="35.0dip">
+                <View android:id="@id/blank_center_view" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+                <Button android:id="@id/delete" android:layout_width="87.0dip" android:layout_height="32.0dip" android:text="删除" android:layout_toLeftOf="@id/blank_center_view" />
+                <Button android:id="@id/xufei" android:layout_width="87.0dip" android:layout_height="32.0dip" android:text="续费" android:layout_toRightOf="@id/blank_center_view" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="100.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/d_panel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/tab_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="请下载" android:singleLine="true" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/tips_expiretime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                <Button android:textSize="13.0sp" android:textColor="@color/qvip_emoji_aio_recommend_button_text" android:gravity="center" android:id="@id/download_btn" android:background="@drawable/qvip_emoji_recommend_detail_button" android:layout_width="47.0dip" android:layout_height="26.0dip" android:layout_marginTop="10.0dip" android:text="下载" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/progress_panel" android:visibility="gone" android:layout_width="85.0dip" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip">
+                <ProgressBar android:id="@id/progressbar" android:layout_width="60.0dip" android:layout_height="5.0dip" android:layout_marginTop="8.0dip" android:max="100" android:progressDrawable="@drawable/aio_market_face_progress_layerlist" android:layout_alignParentTop="true" style="?android:attr/progressBarStyleHorizontal" />
+                <ImageButton android:id="@id/cancelBtn" android:background="@drawable/qvip_aio_face_tab_button_close" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/progressbar" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

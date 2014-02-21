@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/qav_gaudio_face" android:layout_width="@dimen/qav_gaudio_grid_item_width" android:layout_height="@dimen/qav_gaudio_grid_item_width" android:src="@drawable/qzone_cover_constellation_gemini" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/qav_white" android:ellipsize="end" android:id="@id/qav_gaudio_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxWidth="@dimen/qav_gaudio_grid_item_width" android:singleLine="true" android:layout_below="@id/qav_gaudio_face" android:layout_centerHorizontal="true" />
+</RelativeLayout>

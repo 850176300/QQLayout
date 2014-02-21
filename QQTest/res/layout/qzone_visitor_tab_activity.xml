@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mobileqq.pluginsdk.PluginTabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TabWidget android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</com.tencent.mobileqq.pluginsdk.PluginTabHost>

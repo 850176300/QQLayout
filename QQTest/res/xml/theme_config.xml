@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="aio_big_input_bar">false</bool>
+    <dimen name="aio_big_input_bar_padding">5dp</dimen>
+</resources>

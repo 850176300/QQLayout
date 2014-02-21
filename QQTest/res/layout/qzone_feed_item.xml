@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qzone.widget.LinerLayoutForListViewItem android:orientation="vertical" android:background="@drawable/qzone_list_item_bg_selector" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:qzone="http://schemas.android.com/apk/res/com.tencent.mobileqq">
+    <ViewStub android:id="@id/feed_recomm_header_area_stub" android:layout="@layout/qzone_stub_friendfeed_recomm_header_area" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.qzone.widget.AvatarImageView android:id="@id/feed_title_user_icon" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/qzone_icon_default_avatar" qzone:avatarSize="38.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ViewStub android:id="@id/feed_title_area_stub" android:layout="@layout/qzone_stub_friendfeed_title_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/feed_item_title_margin_top" android:layout_marginRight="@dimen/feed_item_margin_right" android:layout_marginBottom="@dimen/feed_item_title_margin_bottom" />
+            <ViewStub android:id="@id/feed_content_area_stub" android:layout="@layout/qzone_stub_friendfeed_content_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="@dimen/feed_item_margin_right" android:layout_marginBottom="-5.0dip" />
+            <ViewStub android:id="@id/feed_action_follow_area_stub" android:layout="@layout/qzone_stub_friendfeed_action_follow_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/feed_item_margin_right" android:layout_marginBottom="11.329987dip" />
+            <ViewStub android:id="@id/feed_action_app_download_area_stub" android:layout="@layout/qzone_stub_friendfeed_action_app_download_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/feed_item_margin_right" android:layout_marginBottom="11.329987dip" />
+            <ViewStub android:id="@id/feed_forward_area_stub" android:layout="@layout/qzone_stub_friendfeed_forward_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/feed_item_margin_right" android:layout_marginBottom="2.0dip" />
+            <ViewStub android:id="@id/feed_leftthumb_area_stub" android:layout="@layout/qzone_stub_friendfeed_leftthumb_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="@dimen/feed_item_margin_right" android:layout_marginBottom="11.329987dip" />
+            <ViewStub android:id="@id/feed_refer_area_stub" android:layout="@layout/qzone_feed_stub_refer_area" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/feed_operation_area_stub" android:layout="@layout/qzone_stub_friendfeed_operation_area" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/feed_comment_area_stub" android:layout="@layout/qzone_stub_friendfeed_comment_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-8.0dip" android:layout_marginRight="@dimen/feed_item_margin_right" android:layout_marginBottom="11.329987dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/color_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</com.qzone.widget.LinerLayoutForListViewItem>

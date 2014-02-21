@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:qzone="http://schemas.android.com/apk/res/com.tencent.mobileqq">
+    <com.qzone.widget.AsyncImageView android:id="@id/seal_banner_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/qzone_icon_registration_banner" android:scaleType="fitCenter" />
+    <com.qzone.signin.ui.component.SealGridViewPager android:id="@id/seal_tabcontent_grid_view" android:paddingLeft="18.0dip" android:paddingTop="15.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" qzone:pageBackground="@drawable/qzone_select_seal_background" qzone:pageBackgroundMode="match_row" qzone:gpHorizontalSpacing="0.5dip" qzone:gpVerticalSpacing="0.5dip" qzone:gpNumColumns="3" qzone:gpNumRows="4" />
+    <Button android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@id/seal_tabcontent_btm_num_btn" android:background="@drawable/qzone_bg_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+    <com.qzone.preview.view.DotNumberView android:layout_gravity="center_horizontal" android:id="@id/seal_tabcontent_btm_dot_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+</LinearLayout>

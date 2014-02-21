@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@drawable/common_list_overscoll_top_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/rl_title_bar" layout="@layout/custom_commen_title" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:foregroundGravity="fill_horizontal|top|center">
+        <com.tencent.widget.PinnedHeaderExpandableListView android:id="@id/friend_pull_refresh_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

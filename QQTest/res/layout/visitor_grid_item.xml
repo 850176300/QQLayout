@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top|left|center" android:id="@id/face_img" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/h001" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <ImageView android:id="@id/imageMask" android:background="@drawable/card_visitor_shadow" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="3.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/avatar_bg_selector" />
+    <ImageView android:layout_gravity="bottom|right|center" android:id="@id/voter_badge" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/card_visited_like" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

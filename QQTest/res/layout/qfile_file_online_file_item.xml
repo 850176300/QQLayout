@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/online_file_layout" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/textView1">
+        <ImageView android:id="@id/onlinefile" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="1.0dip" android:scaleType="fitCenter" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/onlinefiledesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="0.0dip" android:layout_toRightOf="@id/onlinefile" android:layout_alignTop="@id/onlinefile" android:layout_alignBottom="@id/onlinefile">
+            <TextView android:textSize="15.0sp" android:textColor="#ff282828" android:ellipsize="middle" android:gravity="center_vertical" android:id="@id/onlinefilename" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="未知" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/onlinefilespace" android:background="@drawable/aio_file_desc_space" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" android:layout_below="@id/onlinefilename" />
+            <TextView android:textSize="15.0sp" android:gravity="center_vertical" android:id="@id/onlinefilesize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" android:singleLine="true" android:layout_below="@id/onlinefilespace" />
+        </RelativeLayout>
+        <ImageView android:id="@id/onlinefileopspace" android:background="@drawable/aio_file_desc_space" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" android:layout_below="@id/onlinefiledesc" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/onlinefileop" android:layout_width="fill_parent" android:layout_height="35.0dip" android:weightSum="1.0" android:layout_below="@id/onlinefile">
+            <Button android:textSize="15.0sp" android:gravity="center" android:id="@id/onlinefilecancel" android:background="@drawable/qfile_file_online_file_request_ignore_btn_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/onlinefilerequestignore" android:singleLine="true" android:layout_weight="0.5" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/onlinefilerecvlayout" android:background="@drawable/qfile_file_online_file_request_accept_btn_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="1.0" android:layout_weight="0.5">
+                <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.25" />
+                <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/onlinefilerecvtext" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/onlinefilerequestaccept" android:singleLine="true" android:layout_weight="0.5" />
+                <RelativeLayout android:id="@id/onlinefilerecvstatuslayout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.25">
+                    <TextView android:id="@id/onlinefilerecvstatus" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <ImageView android:id="@id/onlinefilerecvstatus_1" android:background="@drawable/troop_class_choice" android:layout_width="20.0dip" android:layout_height="15.0dip" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="15.0sp" android:textColor="@android:color/darker_gray" android:gravity="center" android:id="@id/onlinefilehadbedo" android:layout_width="fill_parent" android:layout_height="35.0dip" android:singleLine="true" android:layout_below="@id/onlinefile" />
+    </RelativeLayout>
+</merge>

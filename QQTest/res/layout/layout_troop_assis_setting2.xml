@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:id="@id/tas_tip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/group_assistant_show_no_notify_but_num_group" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/tas_msg_setting" android:background="@drawable/tas_msg_setting" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/tas_show_in_msg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ToggleButton android:id="@id/tas_show_in_msg_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@null" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/tas_show_in_msg_top" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ToggleButton android:id="@id/tas_show_in_msg_top_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

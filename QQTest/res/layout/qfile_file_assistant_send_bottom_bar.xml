@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/sendBottomBar" android:background="@drawable/skin_aio_input_bar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/sendIcon" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginRight="10.0dip" />
+        <Button android:textSize="14.0dip" android:id="@id/send" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="4.0dip" android:text="@string/chat_send" android:layout_alignParentRight="true" style="@style/SmallButtonBlue" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/skin_bar_text" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/selectFile" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="4.0dip" android:layout_toLeftOf="@id/send" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</merge>

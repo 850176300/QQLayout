@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/bar" android:background="@drawable/qq_secretfile_wheellayout_bar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:layout_alignParentTop="true">
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/secretfile_choice_valid_time_label" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:id="@id/photo_preview_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/finish" android:singleLine="true" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SmallButtonBlue" />
+        </RelativeLayout>
+    </FrameLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/wheel_bg" android:background="@drawable/wheel_layout_bg" android:paddingTop="10.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/bar">
+        <com.tencent.mobileqq.widget.wheel.WheelView android:id="@id/wheel" android:background="@android:color/transparent" android:layout_width="190.0dip" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

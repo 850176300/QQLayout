@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/bg_texture" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/reader_bridge_book" android:background="@drawable/qq_plugin_reader_book" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_cihei" android:id="@id/reader_bridge_progress_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="正在加载(0%)..." android:layout_below="@id/reader_bridge_book" android:layout_centerHorizontal="true" />
+    <ProgressBar android:id="@id/reader_bridge_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="10.0dip" android:maxHeight="4.0dip" android:max="100" android:progressDrawable="@drawable/aio_file_progress_layerlist" android:minHeight="4.0dip" android:layout_below="@id/reader_bridge_progress_info" style="?android:attr/progressBarStyleHorizontal" />
+</RelativeLayout>

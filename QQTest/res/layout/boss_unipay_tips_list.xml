@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/boss_unipay_wrapper"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/boss_unipay_linear.tipframe">
+        <LinearLayout style="@style/boss_unipay_linear">
+            <LinearLayout style="@style/boss_unipay_tips_header">
+                <LinearLayout android:layout_weight="100.0" style="@style/boss_unipay_tips_title">
+                    <TextView android:text="开通QQ会员" style="@style/boss_unipay_tx" />
+                </LinearLayout>
+                <ImageButton style="@style/boss_unipay_ic_tipsclose" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/boss_unipay_list_group">
+            <RelativeLayout style="@style/boss_unipay_listbar_c.top">
+                <ImageView style="@style/boss_unipay_ic_select" />
+                <TextView android:textColor="@color/boss_unipay_c_blue" android:layout_marginLeft="35.0dip" android:text="1个月" android:layout_centerVertical="true" style="@style/boss_unipay_tx.select" />
+                <TextView android:text="100.00元" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/boss_unipay_tx.price" />
+            </RelativeLayout>
+            <RelativeLayout style="@style/boss_unipay_listbar_c.middle">
+                <TextView android:layout_marginLeft="35.0dip" android:text="1个月" android:layout_centerVertical="true" style="@style/boss_unipay_tx" />
+                <TextView android:text="10.00元" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/boss_unipay_tx.price" />
+            </RelativeLayout>
+            <RelativeLayout style="@style/boss_unipay_listbar_c.bottom">
+                <TextView android:layout_marginLeft="35.0dip" android:text="其他..." android:layout_centerVertical="true" style="@style/boss_unipay_tx" />
+            </RelativeLayout>
+        </LinearLayout>
+        <CheckBox android:text="@string/boss_unipay_agreecheck" style="@style/boss_unipay_agreecheck" />
+        <LinearLayout android:layout_marginTop="10.0dip" style="@style/boss_unipay_edit_group_c">
+            <LinearLayout style="@style/boss_unipay_listbar_c_effect.top">
+                <LinearLayout android:layout_weight="100.0" style="@style/boss_unipay_wrap">
+                    <TextView android:text="200书币" style="@style/boss_unipay_tx.list" />
+                    <TextView android:textColor="@color/boss_unipay_c_thin1" android:text="(送10)" style="@style/boss_unipay_tx.small" />
+                </LinearLayout>
+                <TextView android:layout_marginRight="10.0dip" android:text="100.00元" style="@style/boss_unipay_tx.price" />
+                <ImageView style="@style/boss_unipay_ic_arrowr.list" />
+            </LinearLayout>
+            <LinearLayout style="@style/boss_unipay_listbar_c_effect.bottom">
+                <LinearLayout android:layout_weight="100.0" style="@style/boss_unipay_wrap">
+                    <TextView android:text="其他数额" style="@style/boss_unipay_tx.list" />
+                </LinearLayout>
+                <ImageView style="@style/boss_unipay_ic_arrowr.list" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_marginTop="10.0dip" style="@style/boss_unipay_edit_group_c">
+            <LinearLayout style="@style/boss_unipay_edit_wrap">
+                <EditText android:layout_width="0.0dip" android:text="6" android:layout_weight="100.0" style="@style/boss_unipay_edit.noborder" />
+                <ImageButton style="@style/boss_unipay_ic_reduce" />
+                <ImageButton style="@style/boss_unipay_ic_add" />
+            </LinearLayout>
+        </LinearLayout>
+        <CheckBox android:text="@string/boss_unipay_agreecheck" style="@style/boss_unipay_agreecheck" />
+        <TextView android:textColor="@color/boss_unipay_c_thin1" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:text="赠送10书币" style="@style/boss_unipay_tx.small" />
+        <LinearLayout android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" style="@style/boss_unipay_wrap">
+            <TextView android:text="应付金额" style="@style/boss_unipay_tx" />
+            <TextView android:layout_marginLeft="10.0dip" android:text="2.00元" style="@style/boss_unipay_tx.price" />
+        </LinearLayout>
+        <Button android:text="立即开通" style="@style/boss_unipay_btn_main" />
+    </LinearLayout>
+</LinearLayout>

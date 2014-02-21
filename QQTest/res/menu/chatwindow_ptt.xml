@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/play_ptt" android:title="@string/play_ptt" />
+    <item android:id="@id/del_ptt" android:title="@string/del_ptt" />
+    <item android:id="@id/resend_ptt" android:title="@string/resend_ptt" />
+    <item android:id="@id/forward" android:title="@string/forward" />
+    <item android:id="@id/favorite" android:title="@string/favorite" />
+</menu>

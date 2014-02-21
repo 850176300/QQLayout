@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.tencent.mobileqq.widget.QQVideoView android:id="@id/userguide_video_view" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <Button android:textSize="12.0sp" android:textColor="#ff262626" android:id="@id/userguide_skip" android:background="@drawable/qq_userguide_skip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/userguide_skip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/userguide_splash" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/qq_userguide_pic_guodu" android:contentDescription="@null" />
+</FrameLayout>

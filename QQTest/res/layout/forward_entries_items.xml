@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/skin_list_item_normal" android:clickable="false" android:layout_width="fill_parent" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/phone_contact_entry_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="23.0dip" android:contentDescription="选择通讯录联系人">
+        <ImageView android:id="@id/phone_contact_entry_iv" android:background="@drawable/qq_contact_list_phone_enter_icon" android:duplicateParentState="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/contact_list_entry_item_selector" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/skin_gray1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="通讯录" android:layout_below="@id/phone_contact_entry_iv" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <RelativeLayout android:id="@id/troop_entry_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:contentDescription="选择群">
+        <ImageView android:id="@id/troop_entry_iv" android:background="@drawable/qq_contact_list_troop_entry_icon" android:duplicateParentState="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/contact_list_entry_item_selector" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/skin_gray1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/group" android:layout_below="@id/troop_entry_iv" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <RelativeLayout android:id="@id/discussion_entry_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:contentDescription="选择讨论组">
+        <ImageView android:id="@id/discussion_entry_iv" android:background="@drawable/qq_contact_list_discussion_entry_icon" android:duplicateParentState="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/contact_list_entry_item_selector" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/skin_gray1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/tab_title_discussion" android:layout_below="@id/discussion_entry_iv" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <RelativeLayout android:id="@id/friend_entry_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="23.0dip" android:contentDescription="选择QQ好友">
+        <ImageView android:id="@id/friend_entry_iv" android:background="@drawable/qq_contact_list_friend_entry_icon" android:duplicateParentState="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/contact_list_entry_item_selector" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/skin_gray1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="QQ好友" android:layout_below="@id/friend_entry_iv" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

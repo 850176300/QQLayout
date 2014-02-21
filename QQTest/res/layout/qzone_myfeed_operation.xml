@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="right" android:id="@id/feed_operation_area" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="right" android:id="@id/feed_operation_praisep" android:paddingRight="@dimen/feed_item_margin_right" android:paddingBottom="11.0dip" android:layout_width="100.0dip" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dp13" android:textColor="@color/qzone_feed_combtn" android:gravity="center" android:id="@id/feed_operation_comment" android:paddingLeft="10.0dip" android:paddingRight="9.0dip" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="30.0dip" android:minWidth="62.0dip" android:text="评论" android:singleLine="true" android:drawableLeft="@drawable/qzone_img_icon_comment" android:drawablePadding="6.0dip" android:contentDescription="评论" />
+    </LinearLayout>
+</RelativeLayout>

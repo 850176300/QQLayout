@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/boss_unipay_wrapper"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/boss_unipay_linear.tipframe">
+        <LinearLayout style="@style/boss_unipay_linear">
+            <LinearLayout style="@style/boss_unipay_tips_header">
+                <LinearLayout android:layout_weight="100.0" style="@style/boss_unipay_tips_title">
+                    <TextView android:text="60" style="@style/boss_unipay_tx" />
+                    <TextView android:text="Q币" style="@style/boss_unipay_tx" />
+                    <TextView android:text="3999.00" style="@style/boss_unipay_tx.price" />
+                    <TextView android:text="元" style="@style/boss_unipay_tx.price" />
+                </LinearLayout>
+                <ImageButton style="@style/boss_unipay_ic_tipsclose" />
+            </LinearLayout>
+            <View style="@style/boss_unipay_line" />
+        </LinearLayout>
+        <LinearLayout android:paddingLeft="15.0dip" android:paddingTop="18.0dip" android:paddingRight="15.0dip" android:paddingBottom="18.0dip" style="@style/boss_unipay_bar">
+            <TextView android:text="验证码已发送至手机186******51" android:layout_weight="100.0" style="@style/boss_unipay_tx" />
+            <ImageButton style="@style/boss_unipay_ic_attent" />
+        </LinearLayout>
+        <LinearLayout style="@style/boss_unipay_edit_group_c">
+            <LinearLayout style="@style/boss_unipay_listbar">
+                <LinearLayout style="@style/boss_unipay_lable_warp">
+                    <TextView android:text="Q币" style="@style/boss_unipay_tx" />
+                    <TextView android:text="（商品名称）" style="@style/boss_unipay_tx" />
+                </LinearLayout>
+                <TextView android:id="@id/boss_unipay_id_MoreBtn" android:text="更换" style="@style/boss_unipay_tx_link" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/boss_unipay_edit_group_c">
+            <LinearLayout style="@style/boss_unipay_edit_wrap">
+                <TextView android:text="卡号" style="@style/boss_unipay_lable_form" />
+                <EditText android:layout_width="0.0dip" android:layout_weight="100.0" style="@style/boss_unipay_edit.noborder" />
+                <ImageButton android:layout_marginLeft="5.0dip" style="@style/boss_unipay_ic_wrong_s" />
+            </LinearLayout>
+            <View style="@style/boss_unipay_line" />
+            <LinearLayout style="@style/boss_unipay_edit_wrap">
+                <TextView android:text="密码" style="@style/boss_unipay_lable_form" />
+                <EditText android:layout_width="0.0dip" android:layout_weight="100.0" style="@style/boss_unipay_edit.noborder" />
+                <View android:layout_marginLeft="5.0dip" style="@style/boss_unipay_ic_wrong_s" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/boss_unipay_linear">
+            <LinearLayout android:paddingRight="0.0dip" style="@style/boss_unipay_edit_bar_c">
+                <EditText android:hint="Q点消费验证码" android:layout_weight="100.0" style="@style/boss_unipay_edit.noborder" />
+                <View style="@style/boss_unipay_partline" />
+                <Button android:layout_width="115.0dip" android:text="重新发送" style="@style/boss_unipay_btn.noborder" />
+            </LinearLayout>
+            <LinearLayout android:paddingRight="0.0dip" style="@style/boss_unipay_edit_bar_c">
+                <EditText android:id="@id/boss_unipay_id_vercode" android:hint="验证码" android:layout_weight="100.0" android:inputType="number" style="@style/boss_unipay_edit.noborder" />
+                <View style="@style/boss_unipay_partline" />
+                <Button android:id="@id/boss_unipay_id_getVerCode" android:background="@drawable/boss_unipay_ic_warn" android:layout_width="115.0dip" style="@style/boss_unipay_btn.noborder" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:autoLink="all" android:layout_gravity="center" android:padding="5.0dip" android:text="无法验证？换个方式" style="@style/boss_unipay_tx_link" />
+        </LinearLayout>
+        <Button android:layout_marginTop="15.0dip" android:text="立即支付" style="@style/boss_unipay_btn_main.tips" />
+    </LinearLayout>
+</LinearLayout>

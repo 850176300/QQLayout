@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/gift_item1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:layout_marginBottom="15.0dip" android:layout_weight="1.0">
+            <com.qzone.widget.AsyncImageView android:id="@id/gift_content_item_img1" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="10.0sp" android:textColor="#ff666666" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/gift_content_item_text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="礼物" android:singleLine="true" android:layout_below="@id/gift_content_item_img1" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/gift_item2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:layout_marginBottom="15.0dip" android:layout_weight="1.0">
+            <com.qzone.widget.AsyncImageView android:id="@id/gift_content_item_img2" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="10.0sp" android:textColor="#ff666666" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/gift_content_item_text2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="礼物" android:singleLine="true" android:layout_below="@id/gift_content_item_img2" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/gift_item3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:layout_marginBottom="15.0dip" android:layout_weight="1.0">
+            <com.qzone.widget.AsyncImageView android:id="@id/gift_content_item_img3" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="10.0sp" android:textColor="#ff666666" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/gift_content_item_text3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="礼物" android:singleLine="true" android:layout_below="@id/gift_content_item_img3" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/gift_item4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:layout_marginBottom="15.0dip" android:layout_weight="1.0">
+            <com.qzone.widget.AsyncImageView android:id="@id/gift_content_item_img4" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="10.0sp" android:textColor="#ff666666" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/gift_content_item_text4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="礼物" android:singleLine="true" android:layout_below="@id/gift_content_item_img4" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.qzone.widget.CommonLine android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

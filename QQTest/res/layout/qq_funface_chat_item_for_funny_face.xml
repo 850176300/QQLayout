@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/aio_padding_left" android:paddingTop="@dimen/aio_padding_top" android:paddingRight="@dimen/aio_padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/chat_content_layout" android:paddingBottom="@dimen/aio_bubble_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:layout_toRightOf="@id/icon" android:layout_below="@id/textView1">
+        <RelativeLayout android:id="@id/big_wheel_layout" android:layout_width="175.0dip" android:layout_height="175.0dip">
+            <ImageView android:id="@id/big_wheel_circuit" android:visibility="gone" android:layout_width="175.0dip" android:layout_height="175.0dip" android:contentDescription="@null" />
+            <ImageView android:id="@id/player0" android:background="@drawable/h001" android:layout_width="30.0dip" android:layout_height="30.0dip" android:contentDescription="@null" />
+            <ImageView android:id="@id/player1" android:background="@drawable/h001" android:layout_width="30.0dip" android:layout_height="30.0dip" android:contentDescription="@null" />
+            <ImageView android:id="@id/player2" android:background="@drawable/h001" android:layout_width="30.0dip" android:layout_height="30.0dip" android:contentDescription="@null" />
+            <ImageView android:id="@id/player3" android:background="@drawable/h001" android:layout_width="30.0dip" android:layout_height="30.0dip" android:contentDescription="@null" />
+            <ImageView android:id="@id/player4" android:background="@drawable/h001" android:layout_width="30.0dip" android:layout_height="30.0dip" android:contentDescription="@null" />
+            <ImageView android:id="@id/player5" android:background="@drawable/h001" android:layout_width="30.0dip" android:layout_height="30.0dip" android:contentDescription="@null" />
+            <ImageView android:id="@id/indicator_final" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@null" />
+            <ImageView android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qq_funface_big_wheel_indicator" android:layout_centerInParent="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <ImageView android:id="@id/funny_image" android:layout_width="100.0dip" android:layout_height="100.0dip" android:contentDescription="@null" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/textSizeS3" android:textColor="@color/skin_chat_buble" android:gravity="center_horizontal" android:id="@id/big_wheel_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@null" android:layout_below="@id/chat_content_layout" android:layout_alignLeft="@id/chat_content_layout" android:layout_alignRight="@id/chat_content_layout" />
+</RelativeLayout>

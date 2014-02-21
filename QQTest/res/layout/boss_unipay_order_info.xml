@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/boss_unipay_wrapper"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/boss_unipay_head">
+        <RelativeLayout style="@style/boss_unipay_bar.head">
+            <Button android:text="返回" android:drawableLeft="@drawable/boss_unipay_icon_back" android:layout_alignParentLeft="true" style="@style/boss_unipay_btn.head" />
+            <TextView android:text="选择支付方式" style="@style/boss_unipay_headtx" />
+            <Button android:text="取消" android:layout_alignParentRight="true" style="@style/boss_unipay_btn.head" />
+        </RelativeLayout>
+        <View style="@style/boss_unipay_line.garydeep1" />
+    </LinearLayout>
+    <LinearLayout android:paddingLeft="10.0dip" android:paddingTop="30.0dip" android:paddingRight="10.0dip" android:paddingBottom="30.0dip" style="@style/boss_unipay_bar">
+        <TextView android:text="请使用密保手机" style="@style/boss_unipay_tx.thin" />
+        <TextView android:ellipsize="middle" android:text="1863454545454" style="@style/boss_unipay_tx.thin" />
+        <TextView android:text="发送短信验证" style="@style/boss_unipay_tx.thin" />
+    </LinearLayout>
+    <LinearLayout style="@style/boss_unipay_list_group.info">
+        <LinearLayout style="@style/boss_unipay_list.info">
+            <TextView android:text="发短信" style="@style/boss_unipay_lable_form.info" />
+            <TextView android:text="Q点保护" style="@style/boss_unipay_tx" />
+        </LinearLayout>
+        <LinearLayout style="@style/boss_unipay_list.info">
+            <TextView android:text="到号码" style="@style/boss_unipay_lable_form.info" />
+            <TextView android:text="1234564648" android:layout_weight="100.0" style="@style/boss_unipay_tx" />
+            <TextView android:text="复制号码" style="@style/boss_unipay_tx_link" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:paddingTop="10.0dip" style="@style/boss_unipay_bar.p">
+        <TextView android:textSize="12.0sp" android:text="短信费用一般为0.1元/条，全部由运营商收取，腾讯公司不收取任何费用。" android:singleLine="false" style="@style/boss_unipay_tx.thin" />
+    </LinearLayout>
+    <Button android:layout_marginTop="20.0dip" android:text="快速发送短信" style="@style/boss_unipay_btn_main" />
+    <TextView android:layout_gravity="center" android:padding="5.0dip" android:text="已手动发送短信" style="@style/boss_unipay_tx_link" />
+    <TextView android:layout_gravity="center" android:padding="5.0dip" android:text="无法验证？换个方式" style="@style/boss_unipay_tx_link" />
+</LinearLayout>

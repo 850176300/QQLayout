@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="#ff123456" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <Button android:id="@id/btn_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SHOW TIPS" />
+    <Button android:id="@id/btn_alert_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ALERT_DIALOG" />
+    <Button android:id="@id/btn_alert_dialog2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ALERT_DIALOG2" />
+    <Button android:id="@id/btn_report_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="REPORT_LOADING" />
+    <Button android:id="@id/btn_show_action_sheet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SHOW ACTION_SHEET" />
+</LinearLayout>

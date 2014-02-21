@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/about_check_upgrade_waiting" android:scaleType="fitXY" />
+    <ProgressBar android:id="@id/receive_progress" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:indeterminateDrawable="@drawable/common_loading2" android:layout_centerInParent="true" />
+</RelativeLayout>

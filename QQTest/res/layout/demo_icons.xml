@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/aio_voice" android:scaleType="center" />
+        <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/aio_keyboard" android:scaleType="center" />
+        <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/aio_fold" android:scaleType="center" />
+        <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/aio_collapse" android:scaleType="center" />
+        <ImageView android:background="@drawable/aio_send_fail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/aio_friend_bg" android:layout_width="200.0dip" android:layout_height="wrap_content" />
+        <ImageView android:background="@drawable/aio_user_bg" android:layout_width="200.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <CheckBox android:layout_gravity="center_vertical" android:layout_width="24.0dip" android:layout_height="24.0dip" android:checked="true" android:button="@drawable/common_checkbox" />
+    </LinearLayout>
+    <LinearLayout android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <CheckBox android:layout_gravity="center_vertical" android:layout_width="24.0dip" android:layout_height="24.0dip" android:checked="false" android:button="@drawable/common_checkbox" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:layout_width="6.0dip" android:layout_height="6.0dip" android:checked="true" android:button="@drawable/common_indicator" />
+            <RadioButton android:layout_width="6.0dip" android:layout_height="6.0dip" android:button="@drawable/common_indicator" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/common_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_loading" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/common_loading_handle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qq_aio_loading_handle" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/common_loading1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_loading" android:layout_below="@id/common_loading_handle" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="999" style="@style/TextViewTip" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="999" style="@style/TextViewTime" />
+        <TextView android:textSize="@dimen/textSizeS4" android:textColor="#ffffffff" android:background="@drawable/aio_remind_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="999" />
+        <LinearLayout android:background="#ffe6e6e6" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在接收..." style="@style/TextViewRefresh" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/aio_refresh_nor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

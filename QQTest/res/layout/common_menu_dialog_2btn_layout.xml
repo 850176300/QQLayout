@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/common_menu_dialog_layout_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn1" style="@style/common_menu_dialog_red_btn_style" />
+    <Button android:id="@id/btnCancel" style="@style/common_menu_dialog_cancel_btn_style" />
+</LinearLayout>

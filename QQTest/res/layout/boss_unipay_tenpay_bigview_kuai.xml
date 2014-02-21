@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/qb_tenpay_pagebg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ScrollView android:orientation="vertical" android:id="@id/tenpay_kuai_scroll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip" style="@style/qb_tenpay_product_price">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/qb_tenpay_black_color" android:ellipsize="end" android:id="@id/kuai_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_weight="1.0" />
+                    <TextView android:textSize="22.0sp" android:textColor="@color/qb_tenpay_orange_color" android:id="@id/kuai_price_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="22.0sp" android:textColor="@color/qb_tenpay_orange_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="@string/boss_unipay_tenpay_yuan" />
+                </LinearLayout>
+                <TextView android:textSize="16.0sp" android:textColor="@color/qb_tenpay_thin_color" android:id="@id/kuai_bank_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="35.0dip" android:singleLine="true" />
+                <com.tenpay.tenpayplugin.view.ClearableEditText android:id="@id/kuai_pass" android:background="@drawable/qb_tenpay_border" android:visibility="visible" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:hint="@string/qb_tenpay_please_input_password" android:inputType="textPassword" android:imeOptions="actionDone" android:imeActionLabel="@string/qb_tenpay_done" style="@style/qb_tenpay_big_edittext" />
+                <com.tenpay.tenpayplugin.view.SixPasswdFullScreenEditText android:id="@id/kuai_pass_six" android:background="@drawable/qb_tenpay_border" android:visibility="visible" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:imeOptions="actionDone" android:imeActionLabel="@string/qb_tenpay_done" style="@style/qb_tenpay_big_edittext" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                    <Button android:id="@id/kuai_forget_pass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/qb_tenpay_forget_pass" style="@style/qb_tenpay_link_blue" />
+                    <Button android:id="@id/kuai_confirm" android:layout_marginTop="11.0dip" android:layout_marginBottom="10.0dip" android:text="@string/boss_unipay_tenpay_pay" style="@style/qb_tenpay_btn_submit" />
+                    <LinearLayout android:gravity="center" android:id="@id/kuai_nopwdnosms" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qb_tenpay_dunpai" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/qb_tenpay_thin_color" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/boss_unipay_tenpay_nopwdnosms" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

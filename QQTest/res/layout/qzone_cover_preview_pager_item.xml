@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="62.0dip" android:layout_height="62.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tencent="http://schemas.android.com/apk/res/com.tencent.mobileqq">
+    <com.qzone.widget.AsyncImageView android:id="@id/qzone_cover_preview_image" android:background="@drawable/qzone_cover_loading_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ProgressBar android:id="@id/cover_progress" android:visibility="visible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/common_loading5" android:indeterminateBehavior="repeat" android:layout_centerInParent="true" />
+</RelativeLayout>

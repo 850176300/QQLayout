@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tencent="http://schemas.android.com/apk/res/com.tencent.mobileqq">
+    <ImageView android:id="@id/rlCommenTitleBG" android:background="@drawable/skin_header_bar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="2.0dip" tencent:skintype="title_bg_bar" />
+    <ImageView android:id="@id/rlCommenTitleBGShadow" android:background="@drawable/skin_header_bar_shadow" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" tencent:skintype="title_shadow1" />
+    <ImageView android:id="@id/imTitleFg" android:background="@drawable/chat_title_bg_tile_repeat" android:layout_width="fill_parent" android:layout_height="fill_parent" tencent:skintype="title_bg_bar_mask" />
+</RelativeLayout>

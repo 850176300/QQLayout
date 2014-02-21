@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/qb_tenpay_pagebg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/tenpay_setpwd_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/setpwd_pass_txt" android:paddingTop="35.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/boss_unipay_tenpay_set_pass" style="@style/qb_tenpay_dialog_text.dark" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/qb_tenpay_border" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <com.tenpay.tenpayplugin.view.SixPasswdFullScreenEditText android:textSize="16.0sp" android:textColor="@color/qb_tenpay_skin_dark_gray" android:textColorHint="@color/qb_tenpay_skin_gray2" android:id="@id/setpwd_setpass" android:background="@null" android:paddingLeft="10.0dip" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="42.0dip" android:singleLine="true" android:maxLength="6" android:inputType="number" />
+                <com.tenpay.tenpayplugin.view.ClearableEditText android:id="@id/setpwd_pass" android:layout_width="fill_parent" android:layout_height="42.0dip" android:hint="@string/qb_tenpay_please_input_password" android:inputType="textPassword" style="@style/qb_tenpay_dialog_edittext" />
+            </LinearLayout>
+            <Button android:id="@id/setpwd_next" android:layout_marginTop="35.0dip" android:text="@string/boss_unipay_tenpay_next" style="@style/qb_tenpay_btn_submit" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

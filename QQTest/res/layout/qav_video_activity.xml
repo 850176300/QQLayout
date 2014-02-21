@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/sharp_big_video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <com.tencent.av.opengl.QQGlView android:id="@id/sharp_big_video_surfaceview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/sharp_big_no_camera" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/qav_video_infos" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/qav_video_animation" android:layout_width="191.0dip" android:layout_height="191.0dip" android:layout_centerHorizontal="true">
+                    <ImageView android:id="@id/qav_video_anim1" android:background="@drawable/qav_audio_start_anim" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/qav_video_anim2" android:background="@drawable/qav_audio_start_anim" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/qav_video_img" android:visibility="invisible" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <TextView android:textSize="20.0sp" android:textColor="@color/qav_white" android:ellipsize="end" android:id="@id/qav_video_name" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="-27.0dip" android:layout_marginRight="50.0dip" android:singleLine="true" android:layout_below="@id/qav_video_animation" android:layout_centerHorizontal="true" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/qav_video_name" android:layout_centerHorizontal="true">
+                    <ProgressBar android:layout_gravity="center_vertical" android:id="@id/qav_audio_notice_loading" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="10.0dip" style="@style/LoadingProgressStyle" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/qav_white" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/sharp_big_no_camera_tip_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/sharp_big_video_mute" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/qav_video_btn_icon_voiceoff_w" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/qav_white" android:gravity="center_horizontal" android:id="@id/qav_net_notice_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qav_video_net_notice" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/sharp_small_video_view" android:background="@drawable/qav_video_bg_s" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <com.tencent.av.opengl.QQGlView android:id="@id/sharp_small_video_surfaceview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/sharp_small_camera_off" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qav_video_btn_icon_cameraoff_w" android:contentDescription="@null" />
+            <ImageView android:id="@id/sharp_small_mute" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qav_video_btn_icon_voiceoff_w" android:contentDescription="@null" />
+        </LinearLayout>
+    </RelativeLayout>
+    <SurfaceView android:id="@id/sharp_video_surfaceview" android:layout_width="1.0px" android:layout_height="1.0px" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <com.tencent.av.widget.RotateTextView android:textSize="@dimen/aio_text_size_small" android:textColor="@color/skin_chat_buble" android:id="@id/av_msgTextView" android:background="@drawable/skin_aio_friend_bubble_nor" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="44.0dip" android:text="@null" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/sharp_control_RelativeLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/qav_white" android:gravity="center_horizontal" android:id="@id/sharp_big_no_camera_tip_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ProgressBar android:id="@id/qav_video_notice_loading" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/sharp_big_no_camera_tip_2" android:layout_alignBottom="@id/sharp_big_no_camera_tip_2" style="@style/LoadingProgressStyle" />
+    <RelativeLayout android:id="@id/qav_audio_screen_off" android:background="@color/qav_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

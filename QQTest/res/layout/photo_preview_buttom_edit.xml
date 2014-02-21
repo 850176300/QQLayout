@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/photopreview_buttom" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="返回箭头" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/send_photo" android:layout_toRightOf="@id/back" android:layout_centerInParent="true">
+        <Button android:id="@id/tabs_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="tabl1, tab2, tab3" />
+    </LinearLayout>
+    <Button android:id="@id/send_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发送" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

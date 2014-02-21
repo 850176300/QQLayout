@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/icon_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/avatar_bg_selector"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@android:id/icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/font_size_extra_small" android:textColor="@color/color_bai" android:gravity="right|center" android:layout_gravity="bottom" android:id="@android:id/text2" android:background="#bf222222" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="16.0dip" android:includeFontPadding="false" android:layout_weight="1.0" />
+    <ImageView android:id="@id/imageMask" android:background="@drawable/contact_list_item_icon_bg_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

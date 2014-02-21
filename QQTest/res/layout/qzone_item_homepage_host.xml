@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/qzone_selector_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:qzone="http://schemas.android.com/apk/res/com.tencent.mobileqq">
+    <com.qzone.widget.CommonLine android:id="@id/feed_dividing_line" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@id/user_info_host_item_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/qzone_text_list_item" android:id="@id/user_info_host_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/user_info_host_item_icon" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/user_info_host_item_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/qzone_icon_forward_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.qzone.widget.MarkFrameLayout android:id="@id/user_info_host_item_imageframe" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/user_info_host_item_arrow" android:layout_centerVertical="true" qzone:mark="@drawable/qzone_bg_tabbar_indicator1" qzone:markWidth="@dimen/dp15" qzone:markHeight="@dimen/dp15" qzone:markPosition="right_top">
+            <com.qzone.widget.AsyncImageView android:id="@id/user_info_host_item_image" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/qzone_icon_default_avatar" />
+        </com.qzone.widget.MarkFrameLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/user_info_host_item_imageframe" android:layout_toRightOf="@id/user_info_host_item_title" android:layout_centerVertical="true">
+            <TextView android:textSize="13.0sp" android:textColor="@color/qzone_text_sub" android:id="@id/user_info_host_item_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

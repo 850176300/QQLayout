@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.widget.XExpandableListView android:scrollbarThumbVertical="@drawable/common_scroll_thumb" android:scrollbarStyle="outsideOverlay" android:layout_gravity="top|left|center" android:id="@id/listview_group" android:background="@drawable/bg_texture" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

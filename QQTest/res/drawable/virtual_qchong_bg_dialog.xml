@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/virsual_qchong_bg_white" />
+            <stroke android:width="@dimen/virtual_qchong_divider_height" android:color="@color/virsual_qchong_divider_gray" />
+        </shape>
+    </item>
+</layer-list>

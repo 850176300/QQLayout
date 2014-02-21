@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:qzone="http://schemas.android.com/apk/res/com.tencent.mobileqq">
+    <include android:id="@id/qz_seal_guider_layout" android:visibility="visible" layout="@layout/qzone_seal_guider_view" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.qzone.signin.ui.component.SealGuideGridViewPager android:id="@id/seal_tabcontent_guide_grid_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="18.0dip" android:layout_weight="1.0" qzone:gpHorizontalSpacing="20.0dip" qzone:gpVerticalSpacing="14.0dip" qzone:gpColumnWidth="96.0dip" qzone:gpNumColumns="4" qzone:gpNumRows="4" />
+        <Button android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@id/seal_tabcontent_btm_num_btn" android:background="@drawable/qzone_bg_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+        <com.qzone.preview.view.DotNumberView android:layout_gravity="center_horizontal" android:id="@id/seal_tabcontent_btm_dot_guide_layout" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+    </LinearLayout>
+</LinearLayout>

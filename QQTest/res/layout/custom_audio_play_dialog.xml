@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="#66000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:background="@drawable/qq_profilecard_mp_dlg_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip">
+        <com.tencent.mobileqq.widget.OvalProgress android:id="@id/ovalProgress" android:layout_width="wrap_content" android:layout_height="60.0dip" android:layout_marginTop="45.0dip" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/imgPlayer" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:src="@drawable/qq_profilecard_mp_player_normal_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.5sp" android:textColor="@color/skin_float_btn" android:id="@id/txtLengthOfTime" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/imgPlayer" android:layout_centerVertical="true" />
+            <View android:layout_width="20.0dip" android:layout_height="wrap_content" android:layout_toRightOf="@id/txtLengthOfTime" />
+        </com.tencent.mobileqq.widget.OvalProgress>
+        <View android:id="@id/lineHorizontal" android:background="#33000000" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="45.0dip" android:layout_below="@id/ovalProgress" />
+        <RelativeLayout android:id="@id/btnsLayout" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_below="@id/lineHorizontal">
+            <View android:id="@id/lineVertical" android:background="#33000000" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+            <Button android:textSize="18.5sp" android:textColor="@color/skin_float_btn" android:id="@id/btnSend" android:background="@drawable/qq_profilecard_mp_bottom_left_round_selector" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/record_listen_confirm_send" android:layout_toLeftOf="@id/lineVertical" android:layout_alignParentLeft="true" />
+            <Button android:textSize="18.5sp" android:textColor="@color/skin_float_btn" android:id="@id/btnGiveUp" android:background="@drawable/qq_profilecard_mp_bottom_right_round_selector" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/record_listen_cancle_send" android:layout_toRightOf="@id/lineVertical" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

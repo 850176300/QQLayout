@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffefeff4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <RelativeLayout android:id="@id/input" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="#ffc8c7cc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/accountContainer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textColorHint="#ff929292" android:gravity="center_vertical" android:id="@id/account" android:background="#00ffffff" android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginRight="70.0dip" android:hint="@string/account_hint" android:maxLines="1" android:singleLine="true" android:layout_alignParentTop="true" style="@style/B3_Font" />
+                <View android:id="@id/delicon" android:background="@drawable/del" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="45.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <RelativeLayout android:id="@id/down" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <View android:id="@id/down_icon" android:background="@drawable/qapp_center_agent_group_indicator_expand" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="10.0dip" android:layout_centerInParent="true" />
+                    <View android:id="@id/up_icon" android:background="@drawable/qapp_center_agent_group_indicator_collapse" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="10.0dip" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <View android:id="@id/line1" android:background="#ffc8c7cc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/accountContainer" />
+            <RelativeLayout android:id="@id/accounts_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/line1">
+                <ImageView android:id="@id/bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/qapp_center_agent_login_account_bg" android:scaleType="matrix" />
+                <com.tencent.open.widget.HorizontalLayout android:id="@id/horizontal_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+            </RelativeLayout>
+            <EditText android:textColorHint="#ff929292" android:gravity="center_vertical" android:id="@id/password" android:background="#00ffffff" android:paddingLeft="10.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginRight="25.0dip" android:hint="@string/password" android:maxLines="1" android:maxLength="16" android:layout_below="@id/accounts_container" android:inputType="textPassword" style="@style/B3_Font" />
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_below="@id/accounts_container">
+                <View android:id="@id/del_pass_icon" android:background="@drawable/del" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:id="@id/line2" android:background="#ffc8c7cc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/password" />
+        </RelativeLayout>
+    </LinearLayout>
+    <Button android:id="@id/open_login_btn" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="35.0dip" android:layout_marginRight="15.0dip" android:text="@string/login" style="@style/ButtonBlue" />
+    <EditText android:id="@id/focus_edit" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+</LinearLayout>

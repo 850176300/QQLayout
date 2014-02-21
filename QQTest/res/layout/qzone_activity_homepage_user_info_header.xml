@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qzone.widget.FillLinearLayout android:orientation="vertical" android:id="@id/user_info_header" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@color/qzone_feeditem_nor" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/user_info_header_panel" android:layout_width="fill_parent" android:layout_height="@dimen/qzone_feeds_header_height" android:layout_marginBottom="@dimen/qzone_feeds_header_marginBottom">
+            <com.qzone.cover.ui.CoverContainer android:id="@id/feed_cover" android:layout_width="fill_parent" android:layout_height="@dimen/qzone_cover_height">
+                <com.qzone.cover.ui.CoverImageView android:id="@id/feed_cover_image" android:background="@drawable/qzone_cover_loading_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/qzone_cover_loading_bg" android:scaleType="centerCrop" android:adjustViewBounds="false" />
+                <include layout="@layout/qzone_cover_photowall_widget" />
+            </com.qzone.cover.ui.CoverContainer>
+            <FrameLayout android:layout_gravity="bottom|right|center" android:id="@id/qzone_widget_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:layout_marginBottom="51.0dip" />
+            <FrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="80.0dip" />
+            <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:id="@id/user_info_brief_bar" layout="@layout/qzone_activity_homepage_user_info_brief_bar" />
+                <include android:id="@id/user_info_summary_bar" layout="@layout/qzone_activity_homepage_summary_bar" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <ViewStub android:id="@id/user_info_guest_panel_stub" android:background="@color/qzone_feeditem_nor" android:layout="@layout/qzone_activity_guest_panel_header" android:inflatedId="@id/user_info_guest_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.qzone.widget.FillLinearLayout>

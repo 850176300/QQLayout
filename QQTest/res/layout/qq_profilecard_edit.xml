@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_texture" android:paddingLeft="@dimen/layout_common_xlistview_paddingLR" android:paddingRight="@dimen/layout_common_xlistview_paddingLR" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/avatar" android:background="@drawable/common_strip_setting_bg" android:layout_marginTop="@dimen/detail_p_activity_v" android:layout_marginBottom="@dimen/detail_p_activity_v" android:minHeight="58.0dip" style="@style/detail_p_activity_item_style">
+        <TextView android:text="@string/face" style="@style/detail_p_activity_title_style" />
+        <ProgressBar android:id="@id/loading_pb" android:layout_width="16.0dip" android:layout_height="16.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/common_loading3" android:indeterminateBehavior="repeat" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/indicator" style="@style/detail_p_activity_arrow_style" />
+        <ImageView android:id="@id/img" android:src="@drawable/h001" android:contentDescription="@string/contentdes_view_avatar" style="@style/detail_p_activity_img_style" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/nickname" android:background="@drawable/common_strip_setting_top" style="@style/detail_p_activity_item_style">
+        <TextView android:id="@id/title" android:text="@string/nickname" style="@style/detail_p_activity_title_style" />
+        <ImageView android:id="@id/indicator" style="@style/detail_p_activity_arrow_style" />
+        <com.tencent.mobileqq.widget.StatableSpanTextView android:ellipsize="end" android:id="@id/txt" android:singleLine="true" style="@style/detail_p_activity_txt_style" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/gender" android:background="@drawable/common_strip_setting_middle" style="@style/detail_p_activity_item_style">
+        <TextView android:id="@id/title" android:text="@string/info_sex" style="@style/detail_p_activity_title_style" />
+        <ImageView android:id="@id/indicator" style="@style/detail_p_activity_arrow_style" />
+        <TextView android:id="@id/txt" android:text="" android:singleLine="true" style="@style/detail_p_activity_txt_style" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/birthday" android:background="@drawable/common_strip_setting_middle" style="@style/detail_p_activity_item_style">
+        <TextView android:id="@id/title" android:text="@string/info_birthday" style="@style/detail_p_activity_title_style" />
+        <ImageView android:id="@id/indicator" style="@style/detail_p_activity_arrow_style" />
+        <TextView android:id="@id/txt" android:singleLine="true" style="@style/detail_p_activity_txt_style" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/label" android:background="@drawable/common_strip_setting_bottom" style="@style/detail_p_activity_item_style">
+        <TextView android:id="@id/title" android:text="@string/tag" android:layout_alignParentTop="true" android:layout_centerVertical="false" style="@style/detail_p_activity_title_style" />
+        <ImageView android:id="@id/indicator" style="@style/detail_p_activity_arrow_style" />
+        <TextView android:id="@id/txt" style="@style/detail_p_activity_txt2_style" />
+    </RelativeLayout>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/status_img_layout" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" layout="@layout/status_hybrid_layout" />
+    <RelativeLayout android:id="@id/more_info" android:background="@drawable/common_strip_setting_bg" android:layout_marginTop="@dimen/detail_p_activity_v" android:layout_marginBottom="@dimen/detail_p_activity_v" style="@style/detail_p_activity_item_style">
+        <TextView android:text="@string/detail_info" style="@style/detail_p_activity_title_style" />
+        <ImageView android:id="@id/indicator" style="@style/detail_p_activity_arrow_style" />
+    </RelativeLayout>
+</LinearLayout>

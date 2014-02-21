@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="font_size_extra_large_num">22</integer>
+    <integer name="font_size_large_num">18</integer>
+    <integer name="font_size_middle_num">16</integer>
+    <integer name="font_size_small_num">14</integer>
+    <integer name="font_size_extra_small_num">12</integer>
+    <integer name="fragment_anim_duration">400</integer>
+    <integer name="fragment_anim_gallery_duration">200</integer>
+    <integer name="tcw_datepicker_startyear">1800</integer>
+    <integer name="tcw_datepicker_endyear">2100</integer>
+    <integer name="main_text_size">16</integer>
+    <integer name="sub_text_size">12</integer>
+</resources>

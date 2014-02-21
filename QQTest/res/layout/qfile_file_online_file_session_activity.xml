@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.tencent.widget.XListView android:id="@id/online_file_request_listView" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:transcriptMode="normal" android:divider="@null" />
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/olfileopmsgbox" android:background="@color/color_hei" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" />
+    </FrameLayout>
+</LinearLayout>

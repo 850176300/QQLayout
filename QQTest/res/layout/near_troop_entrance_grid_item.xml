@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/avatar_bg_selector"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/troop_head" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/near_troop_entry" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/font_size_extra_small" android:textColor="@color/color_bai" android:gravity="center" android:layout_gravity="bottom" android:background="@drawable/lbs_grids_headbg" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="16.0dip" android:text="附近的群" android:includeFontPadding="false" />
+</FrameLayout>

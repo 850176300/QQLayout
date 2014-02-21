@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/boss_unipay_wrapper"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout style="@style/boss_unipay_linear">
+            <com.pay.ui.common.APHead android:id="@id/boss_unipay_id_head" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <include layout="@layout/boss_unipay_info_big" />
+        </LinearLayout>
+        <ScrollView android:id="@id/boss_unipay_ScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" style="@style/boss_unipay_wrapper">
+                <LinearLayout android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_marginTop="20.0dip" style="@style/boss_unipay_edit_wrap">
+                    <TextView android:textColor="@color/boss_unipay_c_thin1" android:id="@id/boss_unipay_id_monthtips" android:visibility="gone" style="@style/boss_unipay_tx.middle" />
+                </LinearLayout>
+                <LinearLayout android:layout_marginTop="20.0dip" style="@style/boss_unipay_edit_group">
+                    <com.pay.ui.common.APEditText android:id="@id/boss_unipay_id_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/boss_unipay_id_operatorInfo" android:layout_marginTop="25.0dip" style="@style/boss_unipay_linear.msg">
+                    <TextView android:id="@id/boss_unipay_id_operatorLocalTv" android:text="广东移动" style="@style/boss_unipay_tx" />
+                    <TextView android:id="@id/boss_unipay_id_somethingTv" android:text="发送“hfzf”至10698888，即可完成支付" android:singleLine="false" style="@style/boss_unipay_tx" />
+                    <TextView android:id="@id/boss_unipay_id_somethingMoreTv" android:text="第二步:按短信指引回复，即可完成支付" android:singleLine="false" style="@style/boss_unipay_tx" />
+                    <TextView android:id="@id/boss_unipay_id_monthpaytip" android:visibility="gone" android:layout_marginTop="10.0dip" android:text="注:本服务为一次性支付，到期后不自动续费" android:singleLine="false" style="@style/boss_unipay_tx" />
+                </LinearLayout>
+                <Button android:id="@id/boss_unipay_id_NextBottomBtn" android:text="下一步" style="@style/boss_unipay_btn_main" />
+                <TextView android:textSize="12.0sp" android:autoLink="all" android:layout_gravity="center_horizontal" android:id="@id/boss_unipay_id_hfpay_tips" android:text="@string/boss_unipay_mobile_pay_tips" style="@style/boss_unipay_tx_link" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <com.tenpay.android.qqplugin.control.MyKeyboardWindow android:id="@id/boss_unipay_keyboard" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

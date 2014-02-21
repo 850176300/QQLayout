@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/info_card_game_layout" android:background="@drawable/common_strip_setting_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/info_card_game_title" android:text="@string/info_card_option_recentgames" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/CardInfoItemTitle" />
+    <ImageView android:id="@id/info_card_game_arrow" android:duplicateParentState="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/CardInfoItemArrow" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/info_card_game_piclist" android:paddingTop="@dimen/info_card_moreinfo_item_paddingTB" android:paddingBottom="@dimen/info_card_moreinfo_item_paddingTB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_toLeftOf="@id/info_card_game_arrow" android:layout_toRightOf="@id/info_card_game_title" android:layout_alignParentTop="true">
+        <com.tencent.image.URLImageView android:id="@id/info_card_game_pic1" android:layout_width="44.0dip" android:layout_height="44.0dip" android:scaleType="centerInside" />
+        <com.tencent.image.URLImageView android:id="@id/info_card_game_pic2" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:scaleType="centerInside" />
+        <com.tencent.image.URLImageView android:id="@id/info_card_game_pic3" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:scaleType="centerInside" />
+        <com.tencent.image.URLImageView android:id="@id/info_card_game_pic4" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:scaleType="centerInside" />
+    </LinearLayout>
+</RelativeLayout>

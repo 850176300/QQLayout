@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/bg_texture" android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/submsg_item_root" android:background="@drawable/skin_setting_strip_bg_unpressed" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:id="@id/submsg_item_icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/h001" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:id="@id/submsg_item_namelayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/skin_black_item" android:ellipsize="end" android:id="@id/submsg_item_name" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="10.0dip" android:text="" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="9.0dip" android:textColor="@color/skin_gray3_item" android:gravity="center_vertical" android:id="@id/submsg_item_time" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/submsg_item_msglayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/submsg_item_namelayout">
+            <TextView android:textSize="12.0sp" android:textColor="@color/skin_gray2_item" android:ellipsize="end" android:gravity="left|center" android:id="@id/submsg_item_content" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/submsg_item_unread" android:background="@drawable/rounded_gray_bg" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:includeFontPadding="false" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

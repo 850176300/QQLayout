@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:qzone="http://schemas.android.com/apk/res/com.tencent.mobileqq">
+    <com.qzone.widget.AvatarImageView android:id="@id/user_info_brief_avatar" android:background="@null" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginLeft="11.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/qzone_icon_default_avatar" android:scaleType="fitCenter" android:layout_centerVertical="true" qzone:avatarSize="70.0dip" />
+    <ImageView android:id="@id/feed_title_user_icon_mark" android:background="@drawable/qzone_feed_avatar_mask" android:layout_width="74.0dip" android:layout_height="74.0dip" android:layout_marginLeft="9.0dip" />
+</RelativeLayout>

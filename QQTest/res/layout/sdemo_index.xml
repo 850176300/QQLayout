@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/MonthwithoutSaveNumberBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开通包月(应用不传购买月数)" />
+    <Button android:id="@id/MonthwithSaveNumberBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开通包月(应用传递购买月数)" />
+    <Button android:id="@id/withoutSaveNumberBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="充值游戏币(应用不传默认值)" />
+    <Button android:id="@id/saveNumberCanChangeBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="充值游戏币(应用传默认值  可改)" />
+    <Button android:id="@id/saveGoodsCanChangeBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="购买道具\n(游戏侧先下订单，无订单无法唤起支付sdk支付)" />
+</LinearLayout>

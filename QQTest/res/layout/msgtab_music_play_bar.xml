@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/music_play_status_bar_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/music_play_status_bar" android:background="#ff0079ff" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:id="@id/msgtab_music_play_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="11.0dip" android:src="@drawable/msgtab_music_play_icon_music" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/nullstring" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/msgtab_playing_music_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_toRightOf="@id/msgtab_music_play_icon" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:src="@drawable/msgtab_music_icon_enter" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/nullstring" />
+    </RelativeLayout>
+</LinearLayout>

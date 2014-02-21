@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/myfeed_content_area" android:background="@drawable/qzone_forward_bg" android:paddingLeft="@dimen/dp8" android:paddingTop="@dimen/dp6" android:paddingRight="@dimen/dp8" android:paddingBottom="@dimen/dp8" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:qzone="http://schemas.android.com/apk/res/com.tencent.mobileqq">
+    <com.qzone.widget.textwidget.CellTextView android:textSize="@dimen/feed_item_content_text_size" android:textColor="@color/myfeed_item_comment_text_color" android:ellipsize="end" android:id="@id/myfeed_source_content_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="@dimen/feed_content_line_spacing_extra" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.qzone.widget.ExtendGridView android:layout_gravity="bottom" android:id="@id/myfeed_image_grids" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:verticalSpacing="4.0dip" android:stretchMode="none" android:numColumns="3" qzone:stretchable="true" qzone:penetrateTouch="true" />
+        <LinearLayout android:layout_gravity="bottom" android:id="@id/myfeed_source_audioFeedBubbleContainer" android:paddingTop="@dimen/dp5" android:paddingBottom="@dimen/dp5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/feed_item_comment_text_size" android:textColor="@color/feed_item_assist_text_color" android:id="@id/myfeed_content_upload_desc" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+</LinearLayout>

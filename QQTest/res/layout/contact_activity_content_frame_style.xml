@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.common.app.InnerFrameManager android:id="@id/ifm_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/skin_header_bar_shadow" android:foregroundGravity="fill_horizontal|top|center">
+        <ViewStub android:id="@id/vs_buddy_list" android:visibility="invisible" android:layout="@layout/contact_inner_frame_buddy_list" android:inflatedId="@id/if_buddy_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/vs_troop_list" android:visibility="invisible" android:layout="@layout/contact_inner_frame_troop_list" android:inflatedId="@id/if_troop_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/vs_discussion_list" android:visibility="invisible" android:layout="@layout/contact_inner_frame_discussion_list" android:inflatedId="@id/if_discussion_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/vs_phone_contact" android:visibility="invisible" android:layout="@layout/phone_contact_inner_frame" android:inflatedId="@id/if_phone_contact" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.tencent.common.app.InnerFrameManager>
+</LinearLayout>

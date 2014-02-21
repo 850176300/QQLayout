@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/menu_refresh" android:id="@id/refreshNearby" android:title="@string/refresh_nearbylist" />
+    <item android:icon="@drawable/menu_clearlbs" android:id="@id/hideLocation" android:title="@string/hide_location" />
+    <item android:icon="@drawable/menu_setting" android:id="@id/help" android:title="@string/setting_help" />
+</menu>

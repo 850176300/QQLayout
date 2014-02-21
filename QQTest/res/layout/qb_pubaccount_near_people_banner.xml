@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout1" android:background="@drawable/qq_nearby_lbs_banner_bg" android:focusable="true" android:layout_width="fill_parent" android:layout_height="110.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/nearby_troop_btn" android:background="@drawable/qb_pubaccount_lbs_icon_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:src="@drawable/qb_pubaccount_lbs_icon_rank" android:scaleType="center" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/nearby_troop" android:layout_below="@id/nearby_troop_btn" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/nearby_business_btn" android:background="@drawable/qb_pubaccount_lbs_icon_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:src="@drawable/qb_pubaccount_lbs_icon_youhui" android:scaleType="center" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/nearby_business_red" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/skin_list_newmessage" android:layout_alignTop="@id/nearby_business_btn" android:layout_alignRight="@id/nearby_business_btn" />
+        <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/nearby_business" android:layout_below="@id/nearby_business_btn" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/nearby_zan_btn" android:background="@drawable/qb_pubaccount_lbs_icon_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:src="@drawable/qb_pubaccount_lbs_icon_linkman" android:scaleType="center" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/nearby_zan" android:layout_below="@id/nearby_zan_btn" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

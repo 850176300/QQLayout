@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bannerView" android:background="@drawable/qzone_visitor_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.qzone.widget.AsyncImageView android:id="@id/bannerImg" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/qzone_visitor_item_left_margin" android:layout_marginRight="@dimen/qzone_visitor_item_left_margin" />
+    <ImageView android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

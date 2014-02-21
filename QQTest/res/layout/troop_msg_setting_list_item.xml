@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/listItemLayout" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mobileqq.widget.MyCheckBox android:gravity="center_vertical" android:id="@id/troopMsgSettingItemCkb" android:background="@null" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginRight="10.0dip" android:button="@drawable/setting_checkbox" android:text="@null" style="@style/B4_Font" />
+    <View android:id="@id/line" android:background="@drawable/list_blockbg_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

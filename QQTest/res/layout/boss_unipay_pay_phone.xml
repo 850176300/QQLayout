@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/boss_unipay_wrapper"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/boss_unipay_head">
+        <RelativeLayout style="@style/boss_unipay_bar.head">
+            <Button android:text="返回" android:layout_alignParentLeft="true" style="@style/boss_unipay_btn.head.back" />
+            <TextView android:text="选择支付方式" style="@style/boss_unipay_headtx" />
+        </RelativeLayout>
+        <View style="@style/boss_unipay_line.garydeep1" />
+    </LinearLayout>
+    <ScrollView style="@style/boss_unipay_wrapper">
+        <LinearLayout android:orientation="vertical" style="@style/boss_unipay_wrapper">
+            <LinearLayout style="@style/boss_unipay_linear">
+                <LinearLayout style="@style/boss_unipay_bar.info">
+                    <TextView android:layout_marginRight="5.0dip" android:text="60书币" style="@style/boss_unipay_tx" />
+                    <TextView android:text="60.00元" style="@style/boss_unipay_tx.price" />
+                </LinearLayout>
+                <View style="@style/boss_unipay_line" />
+            </LinearLayout>
+            <LinearLayout android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_marginTop="20.0dip" style="@style/boss_unipay_edit_bar">
+                <EditText android:hint="输入本机手机号" style="@style/boss_unipay_edit.noborder" />
+            </LinearLayout>
+            <LinearLayout android:layout_marginTop="25.0dip" style="@style/boss_unipay_linear.msg">
+                <TextView android:text="广东移动" style="@style/boss_unipay_tx" />
+                <TextView android:text="发送“HFZF”至10698888即可完成支付" style="@style/boss_unipay_tx" />
+            </LinearLayout>
+            <Button android:text="立即支付" style="@style/boss_unipay_btn_main" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

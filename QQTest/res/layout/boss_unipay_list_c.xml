@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/boss_unipay_wrapper"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_marginTop="30.0dip" style="@style/boss_unipay_linear">
+        <TextView android:text="无点击效果样式" style="@style/boss_unipay_tx.other" />
+        <TextView android:text="请选择Q点消费的验证方式" style="@style/boss_unipay_tx.other" />
+        <LinearLayout android:background="@null" style="@style/boss_unipay_list_group">
+            <LinearLayout style="@style/boss_unipay_listbar_c.top">
+                <LinearLayout android:layout_weight="100.0" style="@style/boss_unipay_wrap">
+                    <TextView android:text="短信验证" style="@style/boss_unipay_tx.list" />
+                    <ImageView android:layout_marginLeft="3.0dip" style="@style/boss_unipay_ic_jian" />
+                </LinearLayout>
+                <ImageView style="@style/boss_unipay_ic_arrowr.list" />
+            </LinearLayout>
+            <LinearLayout style="@style/boss_unipay_listbar_c.middle">
+                <TextView android:text="一键验证" android:layout_weight="100.0" style="@style/boss_unipay_tx.list" />
+                <ImageView style="@style/boss_unipay_ic_arrowr.list" />
+            </LinearLayout>
+            <LinearLayout style="@style/boss_unipay_listbar_c.bottom">
+                <TextView android:text="一键验证" android:layout_weight="100.0" style="@style/boss_unipay_tx" />
+                <ImageView style="@style/boss_unipay_ic_arrowr" />
+            </LinearLayout>
+            <TextView android:text="单个LIST" style="@style/boss_unipay_tx.other" />
+            <LinearLayout style="@style/boss_unipay_listbar_c">
+                <TextView android:text="一键验证" android:layout_weight="100.0" style="@style/boss_unipay_tx.list" />
+                <ImageView style="@style/boss_unipay_ic_arrowr.list" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

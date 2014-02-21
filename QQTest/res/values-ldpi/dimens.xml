@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="contat_buddy_list_name_width">300.0dip</dimen>
+    <dimen name="group_file_list_item_height">225.0dip</dimen>
+    <dimen name="group_file_list_item_del_button_width">203.0dip</dimen>
+    <dimen name="qq_troopinfo_item_photo_space">2.0dip</dimen>
+    <dimen name="qq_troopinfo_item_photo_titleMinWidth">64.0dip</dimen>
+    <dimen name="cover_padding_top">-45.0dip</dimen>
+</resources>

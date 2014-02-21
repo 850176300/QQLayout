@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/feed_item_comment_text_size" android:textColor="@color/qzone_feed_comment_load_fail" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feed_loading_failed" android:drawableLeft="@drawable/qzone_feed_comment_load_fail" android:drawablePadding="2.0dip" />
+</LinearLayout>

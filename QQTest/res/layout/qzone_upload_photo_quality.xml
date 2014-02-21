@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/bg_texture" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/qzone_inputbox_upload_pic" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/photo_post_select_quality_bar_normal" android:layout_width="fill_parent" android:layout_height="51.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:textColor="@color/qun_myfeed_item_content_text_color" android:gravity="center_vertical" android:id="@id/photo_post_select_quality_text_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/qzone_upload_quality_normal" android:singleLine="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/qzone_upload_quality" android:gravity="left|center" android:id="@id/photo_post_select_quality_title_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="图片质量一般，流量消耗小" android:singleLine="true" />
+            </LinearLayout>
+            <ImageView android:id="@id/photo_post_select_quality_check_normal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/qzone_icon_img_check" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <include layout="@layout/qzone_album_divider" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/photo_post_select_quality_bar_high" android:layout_width="fill_parent" android:layout_height="51.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:textColor="@color/qun_myfeed_item_content_text_color" android:gravity="center_vertical" android:id="@id/photo_post_select_quality_text_high" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/qzone_upload_quality_high" android:singleLine="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/qzone_upload_quality" android:gravity="left|center" android:id="@id/photo_post_select_quality_title_high" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="图片质量佳，流量消耗较小" android:singleLine="true" />
+            </LinearLayout>
+            <ImageView android:id="@id/photo_post_select_quality_check_high" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:src="@drawable/qzone_icon_img_check" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <include layout="@layout/qzone_album_divider" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/photo_post_select_quality_bar_raw" android:layout_width="fill_parent" android:layout_height="51.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:textColor="@color/qun_myfeed_item_content_text_color" android:gravity="center_vertical" android:id="@id/photo_post_select_quality_text_raw" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/qzone_upload_quality_raw" android:singleLine="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/qzone_upload_quality" android:gravity="left|center" android:id="@id/photo_post_select_quality_title_raw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="流量消耗较大，建议在WiFi网络下使用" android:singleLine="true" />
+            </LinearLayout>
+            <ImageView android:id="@id/photo_post_select_quality_check_raw" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:src="@drawable/qzone_icon_img_check" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

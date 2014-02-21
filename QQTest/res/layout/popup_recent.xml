@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/framePopupRecent" android:layout_width="84.66998dip" android:layout_height="89.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/billd_selected" android:paddingBottom="9.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:background="@drawable/billd_selected" android:paddingLeft="6.0dip" android:paddingTop="6.0dip" android:paddingRight="6.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <Button android:textSize="@dimen/font_size_extra_small" android:textColor="#ff28292a" android:background="@drawable/billd_selected" android:paddingTop="12.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" />
+</FrameLayout>

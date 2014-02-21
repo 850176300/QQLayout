@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mobileqq.widget.BounceScrollView android:background="@drawable/bg_texture" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foregroundGravity="fill_horizontal|top|center">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/permission_access_public" android:background="@drawable/common_strip_setting_top" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/qzone_permission_access_public" android:layout_centerVertical="true" style="@style/B4_Font_white" />
+                <ImageView android:id="@id/permission_access_public_check" android:duplicateParentState="true" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/troop_class_choice_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/permission_access_friend" android:background="@drawable/common_strip_setting_middle" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/qzone_permission_access_friend" android:layout_centerVertical="true" style="@style/B4_Font_white" />
+                <ImageView android:id="@id/permission_access_friend_check" android:duplicateParentState="true" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/troop_class_choice_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/permission_access_self" android:background="@drawable/common_strip_setting_bottom" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/qzone_permission_access_self" android:layout_centerVertical="true" style="@style/B4_Font_white" />
+                <ImageView android:id="@id/permission_access_self_check" android:duplicateParentState="true" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/troop_class_choice_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.tencent.mobileqq.widget.BounceScrollView>
+</LinearLayout>

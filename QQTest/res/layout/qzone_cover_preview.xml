@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qzone.widget.RelativeLayoutForListViewItem android:id="@id/cover_preview_container" android:background="@color/qzone_color_bai" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:qzone="http://schemas.android.com/apk/res/com.tencent.mobileqq">
+    <com.qzone.preview.view.ViewPager android:id="@id/cover_preview_viewpager" android:layout_width="fill_parent" android:layout_height="@dimen/qzone_cover_preview_height" />
+    <RelativeLayout android:id="@id/cover_operation_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/cover_preview_viewpager">
+        <TextView android:textSize="20.0sp" android:textColor="#ff0a0a0a" android:gravity="center" android:id="@id/cover_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff6a6a6a" android:gravity="center" android:id="@id/cover_weekday" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="19.0dip" android:layout_below="@id/cover_desc" android:layout_centerHorizontal="true" />
+        <com.qzone.preview.view.DotNumberView android:id="@id/cover_preview_dot_layout" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginTop="19.0dip" android:layout_below="@id/cover_weekday" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.qzone.widget.AvatarImageView android:id="@id/cover_user_icon" android:background="@null" android:clickable="false" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginLeft="11.0dip" android:layout_marginTop="-30.0dip" android:src="@drawable/qzone_icon_default_avatar" android:scaleType="fitCenter" android:layout_below="@id/cover_preview_viewpager" qzone:avatarSize="70.0dip" />
+    <ImageView android:id="@id/feed_title_user_icon_mark" android:background="@drawable/qzone_feed_avatar_mask" android:clickable="false" android:layout_width="74.0dip" android:layout_height="74.0dip" android:layout_marginLeft="9.0dip" android:layout_marginTop="-32.0dip" android:layout_below="@id/cover_preview_viewpager" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true">
+        <Button android:enabled="true" android:textSize="18.0sp" android:textColor="@color/qzone_cover_set_enabled" android:id="@id/cover_close" android:background="@drawable/qzone_cover_use_bg_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/qzone_cover_cancel" android:layout_weight="1.0" />
+        <ImageView android:background="@drawable/qzone_cover_preview_set_line" android:layout_width="2.0px" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/cover_set" android:background="@drawable/qzone_cover_use_bg_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="18.0sp" android:textColor="@color/qzone_cover_set_disabled" android:gravity="center" android:id="@id/cover_set_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/qzone_cover_set" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/cover_vip_icon" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/qzone_cover_vip_icon" android:layout_toLeftOf="@id/cover_set_text" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.qzone.widget.RelativeLayoutForListViewItem>

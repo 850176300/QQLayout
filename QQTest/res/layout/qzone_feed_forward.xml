@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:qzone="http://schemas.android.com/apk/res/com.tencent.mobileqq">
+    <LinearLayout android:orientation="vertical" android:id="@id/feed_forward_area" android:background="@drawable/qzone_forward_bg" android:paddingLeft="@dimen/dp8" android:paddingTop="@dimen/dp6" android:paddingRight="@dimen/dp8" android:paddingBottom="@dimen/dp8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <com.qzone.widget.textwidget.CellTextView android:textSize="@dimen/feed_item_content_text_size" android:textColor="@color/qzone_feed_content" android:id="@id/feed_forward_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/feed_content_line_spacing_extra" />
+        <com.qzone.widget.textwidget.CellTextView android:textSize="@dimen/feed_item_content_text_size" android:textColor="@color/feed_item_content_text_color" android:id="@id/feed_forward_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/feed_content_line_spacing_extra" />
+        <com.qzone.widget.ExtendGridView android:layout_gravity="bottom" android:id="@id/feed_image_grids" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:verticalSpacing="4.0dip" android:stretchMode="none" android:numColumns="3" qzone:stretchable="true" qzone:penetrateTouch="true" />
+        <TextView android:textSize="@dimen/feed_item_comment_text_size" android:textColor="@color/feed_item_assist_text_color" android:id="@id/feed_forward_upload_desc" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="共上传18张照片到《幸福的生活时光》" />
+    </LinearLayout>
+</merge>

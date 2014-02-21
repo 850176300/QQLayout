@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/feed_content_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/feed_item_margin_right" android:layout_marginBottom="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:qzone="http://schemas.android.com/apk/res/com.tencent.mobileqq">
+    <com.qzone.widget.textwidget.CellTextView android:textSize="@dimen/feed_item_content_text_size" android:textColor="@color/feed_item_content_text_color_normal" android:id="@id/feed_content_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.qzone.widget.textwidget.CellTextView android:textSize="@dimen/feed_item_content_text_size" android:textColor="@color/feed_item_content_text_color_normal" android:id="@id/feed_content_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/feedMediaContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0999756dip">
+        <com.qzone.widget.ExtendGridView android:layout_gravity="bottom" android:id="@id/feed_image_grids" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:listSelector="@null" android:verticalSpacing="4.0dip" android:stretchMode="none" android:numColumns="3" android:contentDescription="@string/qzone_voice_photo" qzone:stretchable="true" qzone:penetrateTouch="true" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/audioFeedBubbleContainer" android:paddingTop="@dimen/dp5" android:paddingBottom="@dimen/dp5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/feed_item_comment_text_size" android:textColor="@color/qzone_feed_operation_lbs" android:id="@id/feed_content_upload_desc" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="1.0dip" />
+</LinearLayout>

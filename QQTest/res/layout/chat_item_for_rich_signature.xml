@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:layout_gravity="center" android:id="@id/sign_card_title_tv" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="19.0dip" android:layout_marginBottom="8.0dip" android:text="看电影中国合伙人中国合伙人中国" android:singleLine="true" android:lineSpacingExtra="4.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/sign_card_clickable_region" android:background="@drawable/aio_sign_item_bg" android:paddingLeft="13.0dip" android:paddingTop="10.0dip" android:paddingRight="13.0dip" android:paddingBottom="12.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:layout_marginRight="19.0dip">
+        <com.tencent.mobileqq.widget.AnyScaleTypeImageView android:layout_gravity="left" android:id="@id/sign_card_cover_iv" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/default_theme_cover" android:scaleType="fitStart" android:contentDescription="@null" />
+        <LinearLayout android:orientation="vertical" android:id="@id/cover_text_container" android:paddingLeft="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="#ff343939" android:id="@id/sign_card_text_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="看电影中国合伙人中国合伙人中国合伙人中国合伙人中国合伙人中国合伙人中国合伙人中国合伙人中国合伙人中国合伙人中国合伙人中国合伙人中国合伙人中国合伙人中国合伙人" />
+            <LinearLayout android:paddingTop="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/sign_card_pos_iv" android:layout_width="11.0dip" android:layout_height="11.0dip" android:src="@drawable/rich_status_loc_small_normal_unlocated" android:contentDescription="@null" />
+                <TextView android:textSize="11.0sp" android:textColor="#ff9a9a9a" android:id="@id/sign_card_pos_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="4.0dip" android:text="深圳市南山区保利影院" android:singleLine="true" />
+                <TextView android:textSize="11.0sp" android:textColor="#ff9a9a9a" android:id="@id/sign_card_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13-6-7" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

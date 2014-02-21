@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="31.0dip" android:paddingRight="31.0dip" android:paddingBottom="7.0dip" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/chat_item_play_together_content" android:background="@drawable/qq_funface_result_bg" android:paddingLeft="19.0dip" android:paddingTop="15.0dip" android:paddingRight="19.0dip" android:paddingBottom="9.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/chat_item_play_together_title" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <include android:id="@id/chat_item_play_together_result_1" layout="@layout/chat_item_for_play_together_result_item" />
+        <include android:id="@id/chat_item_play_together_result_2" layout="@layout/chat_item_for_play_together_result_item" />
+        <include android:id="@id/chat_item_play_together_result_3" layout="@layout/chat_item_for_play_together_result_item" />
+        <include android:id="@id/chat_item_play_together_result_4" layout="@layout/chat_item_for_play_together_result_item" />
+        <include android:id="@id/chat_item_play_together_result_5" layout="@layout/chat_item_for_play_together_result_item" />
+    </LinearLayout>
+</RelativeLayout>

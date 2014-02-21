@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/strangerProfilemessage" android:background="@drawable/common_strip_setting_bg" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="0.0dip">
+        <TextView android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/chatoption_profile" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/B4_Font_white" />
+        <ImageView android:id="@id/strangerIcon" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="25.0dip" android:src="@drawable/h001" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/common_arrow_right_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/setBackground" android:background="@drawable/common_strip_setting_bg" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="0.0dip">
+        <TextView android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/set_background" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/B4_Font_white" />
+        <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/common_arrow_right_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/clearhistory" android:background="@drawable/common_strip_setting_bg" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="0.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/skin_blue_item" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/chatoption_clearhistory" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <Button android:id="@id/strangerShieldBtn" android:layout_width="fill_parent" android:layout_height="46.0dip" android:text="@string/chatoption_shield" android:layout_weight="1.0" style="@style/ButtonWhite" />
+        <View android:id="@id/buttonInterval" android:layout_width="10.0dip" android:layout_height="46.0dip" />
+        <Button android:id="@id/strangerAddfriendBtn" android:layout_width="fill_parent" android:layout_height="46.0dip" android:text="@string/chatoption_addfriend" android:layout_weight="1.0" style="@style/ButtonBlue" />
+    </LinearLayout>
+</LinearLayout>

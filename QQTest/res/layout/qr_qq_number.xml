@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/qr_layout" android:paddingLeft="@dimen/layout_common_xlistview_paddingLR" android:paddingRight="@dimen/layout_common_xlistview_paddingLR" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/textSizeS3" android:textColor="@color/skin_gray2" android:gravity="center" android:id="@id/txt_title_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:text="@string/qr_qq_num_get" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="24.0sp" android:textColor="@color/skin_black" android:gravity="center" android:id="@id/txt_qq_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="60.0dip" android:layout_below="@id/txt_title_hint" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/layout_qq_caluse" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/txt_qq_number" android:layout_centerHorizontal="true">
+        <CheckBox android:id="@id/check_caluse" android:background="@drawable/cm_blue_check_bg" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="@dimen/layout_common_xlistview_paddingLR" android:checked="true" android:button="@null" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/skin_gray2" android:layout_gravity="center_vertical" android:id="@id/txt_caluse" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/check_caluse" />
+    </RelativeLayout>
+    <Button android:id="@id/btn_into_qq" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/qr_into_qq" android:layout_below="@id/layout_qq_caluse" style="@style/ButtonBlue" />
+</RelativeLayout>

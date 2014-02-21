@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tencent="http://schemas.android.com/apk/res/com.tencent.mobileqq">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/conversation_activity_title" android:background="@drawable/skin_header_bar_bg" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height">
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@id/title_name" android:paddingLeft="96.0dip" android:paddingRight="96.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/mainactivity_tab_conversation" android:singleLine="true" android:layout_centerInParent="true" style="@style/TitleText" />
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" layout="@layout/custom_commen_title_rightview" />
+        <include android:id="@id/conversation_loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" layout="@layout/conversation_loading_view" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.tencent.mobileqq.fpsreport.FPSSlideDetectListView android:id="@id/recent_contact_list" android:background="@drawable/common_list_overscoll_top_bg" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="@null" android:divider="@null" android:dividerHeight="0.0px" />
+        <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/conversation_options_bar" />
+        <View android:background="@drawable/skin_header_bar_shadow" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentTop="true" tencent:skintype="title_shadow1" />
+    </RelativeLayout>
+</LinearLayout>

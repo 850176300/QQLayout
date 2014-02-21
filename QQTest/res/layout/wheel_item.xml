@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="left|center" android:id="@id/wheel_itme_view" android:layout_width="fill_parent" android:layout_height="42.0dip" android:singleLine="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

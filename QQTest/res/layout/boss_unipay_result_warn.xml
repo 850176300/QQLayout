@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/boss_unipay_wrapper"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_height="0.0dip" android:layout_weight="100.0" style="@style/boss_unipay_linear">
+        <LinearLayout style="@style/boss_unipay_bar.result">
+            <View style="@style/boss_unipay_ic_warn" />
+            <TextView android:textColor="@color/boss_unipay_c_em" android:text="未查询到您的短信验证状态" style="@style/boss_unipay_tx.big" />
+        </LinearLayout>
+        <LinearLayout style="@style/boss_unipay_bar.result">
+            <View style="@style/boss_unipay_ic_wrong" />
+            <TextView android:textColor="@color/boss_unipay_c_em1" android:text="未查询到您的短信验证状态" style="@style/boss_unipay_tx.big" />
+        </LinearLayout>
+        <LinearLayout style="@style/boss_unipay_bar.result">
+            <View style="@style/boss_unipay_ic_warn" />
+            <LinearLayout android:orientation="vertical" style="@style/boss_unipay_wrap">
+                <TextView android:textColor="@color/boss_unipay_c_em" android:text="未查询到您的短信验证状态" style="@style/boss_unipay_tx.big" />
+                <TextView android:textColor="@color/boss_unipay_c_thin" android:text="未查询到您的短信验证状态" style="@style/boss_unipay_tx.middle" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="left" style="@style/boss_unipay_result">
+            <LinearLayout android:paddingTop="15.0dip" style="@style/boss_unipay_linear.content">
+                <TextView android:text="可能原因" style="@style/boss_unipay_tx.thin1" />
+                <LinearLayout style="@style/boss_unipay_bar.details">
+                    <TextView android:textSize="12.0sp" android:gravity="left" android:text="1" style="@style/boss_unipay_tx.thin.middle" />
+                    <TextView android:gravity="left" android:layout_marginLeft="5.0dip" android:text="短信发送延迟，请稍后重新查询。" style="@style/boss_unipay_tx.thin.middle" />
+                </LinearLayout>
+                <LinearLayout style="@style/boss_unipay_bar.details">
+                    <TextView android:gravity="left" android:text="2" style="@style/boss_unipay_tx.thin.middle" />
+                    <TextView android:gravity="left" android:layout_marginLeft="5.0dip" android:text="短信未正确发送，请使用密保手机186******51发送验证短信后，重新查询。" android:singleLine="false" style="@style/boss_unipay_tx.thin.middle" />
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/boss_unipay_dashline" />
+            <LinearLayout android:paddingTop="15.0dip" style="@style/boss_unipay_linear.content">
+                <LinearLayout android:paddingLeft="0.0dip" android:paddingRight="0.0dip" style="@style/boss_unipay_list.info">
+                    <TextView android:layout_width="85.0dip" android:text="短信内容:" style="@style/boss_unipay_tx.thin1" />
+                    <TextView android:text="Q点保护" style="@style/boss_unipay_tx.thin1" />
+                </LinearLayout>
+                <LinearLayout android:paddingLeft="0.0dip" android:paddingRight="0.0dip" style="@style/boss_unipay_list.info">
+                    <TextView android:layout_width="85.0dip" android:text="短信号码:" style="@style/boss_unipay_tx.thin1" />
+                    <TextView android:text="1234564648" style="@style/boss_unipay_tx.thin1" />
+                    <TextView android:text="复制号码" style="@style/boss_unipay_tx_link" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:text="快速发送短信" style="@style/boss_unipay_btn_main" />
+        <TextView android:layout_gravity="center" android:padding="5.0dip" android:text="无法验证？换个方式" style="@style/boss_unipay_tx_link" />
+    </LinearLayout>
+</LinearLayout>

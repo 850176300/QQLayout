@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/phone_setting_layout" android:background="@drawable/bg_texture" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/phone_number_view" android:background="@drawable/common_strip_setting_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="@dimen/textSizeS3" android:textColor="@color/skin_black_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_bind_number" />
+        <TextView android:textSize="@dimen/textSizeS3" android:textColor="@color/skin_black_item" android:gravity="right" android:id="@id/phone_number_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/common_arrow_right_selector" android:drawablePadding="10.0dip" />
+    </LinearLayout>
+    <Button android:id="@id/phone_setting_stop_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/phone_stop" style="@style/ButtonRed" />
+</LinearLayout>

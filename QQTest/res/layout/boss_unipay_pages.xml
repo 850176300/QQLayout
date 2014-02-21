@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/boss_unipay_wrapper"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/boss_unipay_head">
+        <RelativeLayout style="@style/boss_unipay_bar.head">
+            <Button android:text="返回" android:layout_alignParentLeft="true" style="@style/boss_unipay_btn.head.back" />
+            <TextView android:text="选择支付方式" style="@style/boss_unipay_headtx" />
+            <Button android:text="取消" android:layout_alignParentRight="true" style="@style/boss_unipay_btn.head" />
+        </RelativeLayout>
+        <View style="@style/boss_unipay_line.garydeep1" />
+    </LinearLayout>
+    <ScrollView style="@style/boss_unipay_wrapper">
+        <LinearLayout android:orientation="vertical" style="@style/boss_unipay_wrapper">
+            <LinearLayout style="@style/boss_unipay_linear">
+                <LinearLayout style="@style/boss_unipay_bar.info">
+                    <TextView android:layout_marginRight="5.0dip" android:text="60书币" style="@style/boss_unipay_tx" />
+                    <TextView android:text="60.00元" style="@style/boss_unipay_tx.price" />
+                </LinearLayout>
+                <View style="@style/boss_unipay_line" />
+            </LinearLayout>
+            <LinearLayout android:paddingLeft="20.0dip" android:paddingTop="30.0dip" android:paddingBottom="2.0dip" style="@style/boss_unipay_bar.p">
+                <TextView android:text="充值面值" style="@style/boss_unipay_tx.middle" />
+                <TextView android:textSize="14.0sp" android:text="100元" style="@style/boss_unipay_tx.price" />
+                <TextView android:textSize="14.0sp" android:layout_marginLeft="5.0dip" android:text="重选" style="@style/boss_unipay_tx_link" />
+            </LinearLayout>
+            <LinearLayout style="@style/boss_unipay_edit_group">
+                <LinearLayout style="@style/boss_unipay_edit_wrap">
+                    <TextView android:text="卡号" style="@style/boss_unipay_lable_form" />
+                    <EditText android:layout_width="0.0dip" android:layout_weight="100.0" style="@style/boss_unipay_edit.noborder" />
+                    <ImageButton android:layout_marginLeft="5.0dip" style="@style/boss_unipay_ic_wrong_s" />
+                </LinearLayout>
+                <View style="@style/boss_unipay_line" />
+                <LinearLayout style="@style/boss_unipay_edit_wrap">
+                    <TextView android:text="密码" style="@style/boss_unipay_lable_form" />
+                    <EditText android:layout_width="0.0dip" android:layout_weight="100.0" style="@style/boss_unipay_edit.noborder" />
+                    <View android:layout_marginLeft="5.0dip" style="@style/boss_unipay_ic_wrong_s" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:text="立即支付" style="@style/boss_unipay_btn_main" />
+            <Button android:text="立即支付" style="@style/boss_unipay_btn_minor" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

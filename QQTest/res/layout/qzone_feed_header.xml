@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qzone.widget.LinerLayoutForListViewItem android:orientation="vertical" android:id="@id/feed_operation_area" android:background="@color/qzone_feeditem_nor" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:qzone="http://schemas.android.com/apk/res/com.tencent.mobileqq">
+    <RelativeLayout android:id="@id/feed_cover_layout" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="@dimen/qzone_feeds_header_height" android:layout_marginBottom="@dimen/qzone_feeds_header_marginBottom">
+        <com.qzone.cover.ui.CoverContainer android:id="@id/feed_cover" android:focusable="true" android:layout_width="fill_parent" android:layout_height="@dimen/qzone_cover_height">
+            <com.qzone.cover.ui.CoverImageView android:id="@id/feed_cover_image" android:background="@drawable/qzone_cover_loading_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/qzone_cover_loading_bg" android:scaleType="centerCrop" android:adjustViewBounds="false" />
+            <include layout="@layout/qzone_cover_photowall_widget" />
+        </com.qzone.cover.ui.CoverContainer>
+        <FrameLayout android:id="@id/qzone_widget_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:layout_marginBottom="51.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <com.qzone.widget.AvatarImageView android:id="@id/feed_title_user_icon" android:background="@null" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginLeft="11.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/qzone_icon_default_avatar" android:scaleType="fitCenter" android:layout_alignParentBottom="true" qzone:avatarSize="70.0dip" />
+        <ImageView android:id="@id/feed_title_user_icon_mark" android:background="@drawable/qzone_feed_avatar_mask" android:layout_width="74.0dip" android:layout_height="74.0dip" android:layout_marginLeft="9.0dip" android:layout_alignParentBottom="true" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/qzone_gomyfeed" android:background="@drawable/qzone_header_passivesel" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="31.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="与我相关">
+            <com.qzone.widget.AvatarImageViewRound android:layout_gravity="center" android:id="@id/qzone_header_passive_user_icon" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginLeft="2.0dip" android:src="@drawable/qzone_header_defaultpassive_avatar" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff314c83" android:gravity="center_vertical" android:id="@id/qzone_feed_noread" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="与我相关" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/qzone_feed_noreadcount" android:background="@drawable/qzone_qun_num_bg" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="24.0dip" android:text="2" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginBottom="13.0dip" android:src="@drawable/qzone_header_defaultpassive_arrow" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/friendfeeds_empty_content_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="250.0dip">
+        <ImageView android:id="@id/friendfeeds_empty_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/friendfeeds_empty_icon_marginTop" android:layout_marginBottom="5.0dip" android:src="@drawable/qzone_icon_logo_normal" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffc3c7c9" android:gravity="center" android:id="@id/friendfeeds_empty_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/friend_feed_empty_tip" android:layout_below="@id/friendfeeds_empty_icon" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</com.qzone.widget.LinerLayoutForListViewItem>

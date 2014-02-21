@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical" android:background="#80000000" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/action_sheet_actionView" android:layout_alignParentBottom="true" style="@style/menu_sheet_layout_style">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/action_sheet_titleContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/action_sheet_contentView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

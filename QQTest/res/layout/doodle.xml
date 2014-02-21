@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tencent="http://schemas.android.com/apk/res/com.tencent.mobileqq">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/skin_header_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height" tencent:skintype="title_bg_bar">
+        <LinearLayout android:orientation="horizontal" android:layout_width="186.0dip" android:layout_height="48.0dip">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/doodletext_layout" android:layout_width="52.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_weight="0.5">
+                <TextView android:textSize="16.0sp" android:textColor="@color/skin_bar_text" android:id="@id/doodletext" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/characters" android:includeFontPadding="false" />
+                <ImageView android:id="@id/dooldetext_line" android:background="@drawable/qq_doodle_title_current" android:layout_width="52.0dip" android:layout_height="4.0dip" android:layout_marginTop="8.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/doodlepic_layout" android:layout_width="52.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_weight="0.5">
+                <TextView android:textSize="16.0sp" android:textColor="@color/skin_bar_text" android:id="@id/doodlepic" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="白板" android:includeFontPadding="false" />
+                <ImageView android:id="@id/dooldepic_line" android:background="@drawable/qq_doodle_title_current" android:layout_width="52.0dip" android:layout_height="4.0dip" android:layout_marginTop="8.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="48.0dip" android:layout_above="@id/addLayout1">
+        <com.tencent.mobileqq.widget.DoodleTextView android:id="@id/draw_text" android:background="@color/doodle_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.tencent.mobileqq.widget.DoodlePicView android:id="@id/draw_pic" android:background="@color/doodle_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/alldelete" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/qq_doodle_clear" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/addLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/thickness" android:background="@drawable/qq_doodle_pickbrush_back" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/pen_thickness" android:padding="8.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/qq_doodle_pen_color" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/round_0" android:padding="7.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/shape_doodle_round" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/round_1" android:padding="8.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/shape_doodle_round" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/round_2" android:padding="9.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/shape_doodle_round" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/round_3" android:padding="10.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/shape_doodle_round" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/round_4" android:padding="11.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/shape_doodle_round" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="14.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/round_5" android:padding="12.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/shape_doodle_round" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/colors" android:background="@drawable/qq_doodle_pickbrush_back" android:paddingLeft="14.0dip" android:paddingTop="0.0dip" android:paddingRight="14.0dip" android:paddingBottom="0.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_below="@id/thickness">
+            <LinearLayout android:gravity="center" android:id="@id/p_pen_color" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/pen_color" android:padding="8.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/qq_doodle_pen_thickness" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/rect_0" android:padding="5.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/shape_doodle_rect_0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/rect_1" android:padding="5.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/shape_doodle_rect_1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/rect_2" android:padding="5.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/shape_doodle_rect_2" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/rect_3" android:padding="5.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/shape_doodle_rect_3" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/rect_4" android:padding="5.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/shape_doodle_rect_4" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/rect_5" android:padding="5.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/shape_doodle_rect_5" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/bottomtab" android:background="@color/doodle_bg" android:layout_width="fill_parent" android:layout_height="57.0dip" android:layout_below="@id/colors">
+            <LinearLayout android:gravity="center" android:id="@id/p_color" android:layout_width="57.0dip" android:layout_height="fill_parent">
+                <ImageView android:id="@id/color" android:focusable="true" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/qq_doodle_icon_brush" />
+            </LinearLayout>
+            <ImageView android:id="@id/line1" android:layout_width="2.0dip" android:layout_height="fill_parent" android:src="@drawable/qq_doodle_icon_line" android:layout_toRightOf="@id/p_color" />
+            <LinearLayout android:gravity="center" android:id="@id/p_backdelete" android:layout_width="57.0dip" android:layout_height="fill_parent" android:layout_toRightOf="@id/line1">
+                <ImageView android:id="@id/backdelete" android:focusable="true" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/qq_doodle_icon_back" />
+            </LinearLayout>
+            <ImageView android:id="@id/icon_line" android:layout_width="2.0dip" android:layout_height="fill_parent" android:src="@drawable/qq_doodle_icon_line" android:layout_toRightOf="@id/p_backdelete" />
+            <LinearLayout android:gravity="center" android:id="@id/p_pic" android:layout_width="57.0dip" android:layout_height="fill_parent" android:layout_toRightOf="@id/icon_line">
+                <ImageView android:id="@id/pic" android:focusable="true" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/qq_doodle_icon_picture" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/font_size_middle" android:gravity="center" android:id="@id/send" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="@string/chat_send" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ButtonBlue" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.qzone.widget.CommonLine android:id="@id/feed_dividing_line" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" />
+    <RelativeLayout android:id="@id/visitorCountContainer" android:background="@drawable/qzone_selector_list_item" android:paddingLeft="7.0dip" android:paddingTop="13.0dip" android:paddingRight="7.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_icon_visitor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.5dip" android:layout_marginRight="8.0dip" android:src="@drawable/qzone_img_icon_visitor" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/visitorContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0人浏览过" android:layout_toRightOf="@id/img_icon_visitor" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qzone_icon_forward_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

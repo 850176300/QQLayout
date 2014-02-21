@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/image_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/big_detail_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/big_detail_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+            <ImageView android:id="@id/voice_icon_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/qvip_emoji_sound_new_emo_voice3" android:layout_toRightOf="@id/big_detail_image" android:layout_alignBottom="@id/big_detail_image" android:contentDescription="@null" />
+            <TextView android:textSize="16.5sp" android:textColor="#ff000000" android:id="@id/emosmName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_below="@id/big_detail_image" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/btn_forward" android:background="@drawable/qvip_emoji_forward" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.5dip" android:layout_marginRight="10.5dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bottom_bar" android:background="#ffefeff4" android:paddingLeft="@dimen/emosm_detail_mEdgePadding" android:paddingTop="15.5dip" android:paddingRight="@dimen/emosm_detail_mEdgePadding" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="195.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/emobase" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.5sp" android:textColor="#ff000000" android:id="@id/packageName" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/packageType" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:contentDescription="@null" />
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textSize="12.5sp" android:textColor="#ff828282" android:id="@id/emosmDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.5dip" />
+            <Button android:textSize="16.5sp" android:textColor="@drawable/qvip_emoji_scan_all_text" android:layout_gravity="right" android:id="@id/viewDetail" android:background="@drawable/qvip_emoji_scan_all_bg" android:layout_width="100.0dip" android:layout_height="wrap_content" android:minHeight="34.0dip" android:text="@string/aio_emoji_detailpage_scanall" />
+        </LinearLayout>
+        <TextView android:textSize="12.5sp" android:textColor="#ff828282" android:id="@id/scanSpec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/emobase" />
+        <com.tencent.mobileqq.widget.MyGridView android:id="@id/emosm_imgs_grid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.5dip" android:listSelector="@color/transparent" android:stretchMode="columnWidth" android:numColumns="5" android:layout_below="@id/scanSpec" />
+    </RelativeLayout>
+</RelativeLayout>

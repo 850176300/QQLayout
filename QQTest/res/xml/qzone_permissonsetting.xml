@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cooperation.qzone.widget.RadioPreference android:title="正式" android:key="zhengshi" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="true" />
+    <cooperation.qzone.widget.RadioPreference android:title="DB" android:key="db2" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="PUBLISH" android:key="testPublish" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_001" android:key="dev001" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_002" android:key="dev002" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_003" android:key="dev003" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_004" android:key="dev004" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_005" android:key="dev005" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_006" android:key="dev006" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_007" android:key="dev007" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_008" android:key="dev008" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_009" android:key="dev009" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_010" android:key="dev010" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_011" android:key="dev011" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_012" android:key="dev012" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_013" android:key="dev013" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_014" android:key="dev014" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_015" android:key="dev015" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_016" android:key="dev016" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_017" android:key="dev017" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_018" android:key="dev018" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_019" android:key="dev019" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_020" android:key="dev020" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_021" android:key="dev021" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_022" android:key="dev022" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="TEST_001" android:key="test001" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="TEST_002" android:key="dev023" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="TEST_003" android:key="dev024" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="TEST_004" android:key="dev025" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="TEST_005" android:key="dev026" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="TOUCH_001" android:key="touch001" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_027" android:key="dev027" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_028" android:key="dev028" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_029" android:key="dev029" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_030" android:key="dev030" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_031" android:key="dev031" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_032" android:key="dev032" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_033" android:key="dev033" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_034" android:key="dev034" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_035" android:key="dev035" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_036" android:key="dev036" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+    <cooperation.qzone.widget.RadioPreference android:title="DEV_037" android:key="dev037" android:widgetLayout="@layout/qzone_radiopreference" android:defaultValue="false" />
+</PreferenceScreen>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_texture" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tencent="http://schemas.android.com/apk/res/com.tencent.mobileqq">
+    <com.tencent.mobileqq.widget.BounceScrollView android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/logininfo_dev_linear" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="12.5sp" android:textColor="@color/skin_gray2_item" android:id="@id/multi_login_dev_tv" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:layout_marginTop="15.0dip" android:text="@string/mutil_dev_logininfo_at_line" />
+            <LinearLayout android:orientation="vertical" android:id="@id/multi_login_dev_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+            <TextView android:textSize="12.5sp" android:textColor="@color/skin_gray2_item" android:id="@id/multi_login_info_dev_no_line_tv" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:layout_marginTop="15.0dip" android:text="@string/mutil_dev_logininfo_not_at_line" />
+            <LinearLayout android:orientation="vertical" android:id="@id/multi_login_info_dev_no_line_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+            <TextView android:textSize="12.5sp" android:textColor="@color/skin_gray2_item" android:id="@id/login_info_dev_password" android:paddingBottom="20.0dip" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" />
+        </LinearLayout>
+    </com.tencent.mobileqq.widget.BounceScrollView>
+</LinearLayout>

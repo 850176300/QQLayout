@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:qzone="http://schemas.android.com/apk/res/com.tencent.mobileqq">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/feed_leftthumb_area" android:background="@drawable/qzone_forward_bg" android:layout_width="fill_parent" android:layout_height="84.0dip" android:layout_marginTop="2.0dip">
+        <com.qzone.widget.FeedImageView android:id="@id/feed_leftthumb_image" android:background="#ffcdcdcd" android:layout_width="69.0dip" android:layout_height="69.0dip" android:adjustViewBounds="true" android:contentDescription="@string/qzone_voice_photo" />
+        <LinearLayout android:gravity="left|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="2.0dip">
+            <com.qzone.widget.textwidget.CellTextView android:textSize="@dimen/feed_item_comment_text_size" android:textColor="@color/qzone_feed_content" android:id="@id/feed_leftthumb_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_marginBottom="-6.0dip" android:lineSpacingExtra="@dimen/feed_content_line_spacing_extra" />
+            <com.qzone.widget.textwidget.CellTextView android:textSize="@dimen/feed_item_comment_text_size" android:textColor="@color/qzone_feed_content" android:id="@id/feed_leftthumb_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:layout_marginRight="8.0dip" android:lineSpacingExtra="@dimen/feed_content_line_spacing_extra" />
+            <TextView android:textSize="@dimen/feed_item_comment_text_size" android:textColor="@color/white" android:gravity="center" android:layout_gravity="right" android:id="@id/feed_leftthumb_download" android:background="@drawable/qzone_selector_feed_leftthumb_down" android:paddingTop="2.0dip" android:visibility="gone" android:layout_width="83.0dip" android:layout_height="24.0dip" android:layout_marginTop="4.0dip" android:text="点击下载" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

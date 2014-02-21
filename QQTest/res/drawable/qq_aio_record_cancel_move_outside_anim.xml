@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/qq_aio_record_del_06" />
+    <item android:duration="50" android:drawable="@drawable/qq_aio_record_del_07" />
+    <item android:duration="50" android:drawable="@drawable/qq_aio_record_del_08" />
+    <item android:duration="50" android:drawable="@drawable/qq_aio_record_del_01" />
+</animation-list>

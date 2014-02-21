@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/visitRelative" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.qzone.widget.QZonePullToRefreshSlideDetectListView android:scrollbarThumbVertical="@drawable/qzone_scrollbar" android:scrollbarStyle="insideOverlay" android:id="@id/visit_me_list" android:background="@color/color_background" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:scrollingCache="false" android:divider="@null" android:layout_alignParentTop="true" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+    <RelativeLayout android:id="@id/vip_guide" android:background="@color/color_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/my_visitor_head" layout="@layout/qzone_visitor_listview_head" />
+        <LinearLayout android:orientation="vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/only_vip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qzone_visitor_only_vip" />
+            <ImageView android:orientation="horizontal" android:id="@id/to_be_vip" android:background="@drawable/qzone_visitor_open_vip_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="130.0dip" android:minWidth="215.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="#ff246183" android:gravity="center" android:id="@id/to_know_vip" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/qzone_visitor_know_vip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_size_small" android:textColor="@color/skin_gray2" android:gravity="center_horizontal" android:id="@id/line1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="62.0dip" android:text="@string/voter_none_card_prompt_line1" />
+    <TextView android:textSize="@dimen/font_size_small" android:textColor="@color/skin_gray2" android:gravity="center_horizontal" android:id="@id/line2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/voter_none_card_prompt_line2" />
+    <TextView android:textSize="@dimen/font_size_small" android:textColor="@color/skin_gray2" android:gravity="center_horizontal" android:id="@id/line3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/voter_none_card_prompt_line3" />
+</LinearLayout>

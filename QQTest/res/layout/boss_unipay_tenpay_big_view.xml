@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tenpay.tenpayplugin.view.TenpayResizeLinearLayout android:orientation="vertical" android:id="@id/tenpay_main_linear" android:background="@color/qb_tenpay_pagebg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/qb_tenpay_common_title_bar" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include android:id="@id/pay_cft" android:visibility="gone" layout="@layout/boss_unipay_tenpay_bigview_cft" />
+        <include android:id="@id/pay_kuai" android:visibility="gone" layout="@layout/boss_unipay_tenpay_bigview_kuai" />
+        <include android:id="@id/tenpay_card_bin" android:visibility="gone" layout="@layout/boss_unipay_tenpay_bigview_card_bin" />
+        <include android:id="@id/tenay_bigview_bank_setpwd_layout" android:visibility="gone" layout="@layout/boss_unipay_tenpay_bigview_bank_setpwd" />
+        <include android:id="@id/pay_yz" android:visibility="gone" layout="@layout/boss_unipay_tenpay_bigview_bank_yz" />
+        <include android:id="@id/tenpay_bank_phone" android:visibility="gone" layout="@layout/boss_unipay_tenpay_bigview_bank_phone" />
+        <include android:id="@id/tenpay_youxiaoqi" android:visibility="gone" layout="@layout/boss_unipay_tenpay_bigview_youxiaoqi" />
+    </FrameLayout>
+    <com.tenpay.tenpayplugin.view.MyKeyboardWindow android:id="@id/bin_keyboard" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.tenpay.tenpayplugin.view.TenpayResizeLinearLayout>
